@@ -1,34 +1,34 @@
 /* ============================================================
    RD Medcare – Medical Technology Design System
-   Palette: Medical Green / White / Light Gray
+   Palette: Earth Tone / Warm Brown-Grey / Luxury
    ============================================================ */
 
 /* ─── Design Tokens ─────────────────────────────────────── */
 :root {
-  /* Green medical palette */
-  --green-900:  #003d20;
-  --green-800:  #005c2e;
-  --green-700:  #006b3c;
-  --green-600:  #008049;
-  --green-500:  #00954d;
-  --green-400:  #2ab06e;
-  --green-300:  #5cc98d;
-  --green-200:  #a8e4c4;
-  --green-100:  #d4f4e4;
-  --green-50:   #edfaf3;
+  /* Earth tone palette */
+  --green-900:  #1c1410;
+  --green-800:  #2e1f14;
+  --green-700:  #4a3020;
+  --green-600:  #6b4530;
+  --green-500:  #8a5e42;
+  --green-400:  #b07d5c;
+  --green-300:  #c8a488;
+  --green-200:  #e0caba;
+  --green-100:  #f0e6dc;
+  --green-50:   #f8f3ee;
 
-  /* Neutrals */
-  --gray-950:  #0a0f0d;
-  --gray-900:  #111815;
-  --gray-800:  #1c2620;
-  --gray-700:  #2d3b32;
-  --gray-600:  #4a5c51;
-  --gray-500:  #6b7d72;
-  --gray-400:  #95a89e;
-  --gray-300:  #c4d0c9;
-  --gray-200:  #e0e8e3;
-  --gray-100:  #f0f4f1;
-  --gray-50:   #f7faf8;
+  /* Warm grey neutrals */
+  --gray-950:  #100c09;
+  --gray-900:  #1c1410;
+  --gray-800:  #2a2018;
+  --gray-700:  #3d3028;
+  --gray-600:  #5a4a40;
+  --gray-500:  #7a6a60;
+  --gray-400:  #9a8c84;
+  --gray-300:  #c0b0a8;
+  --gray-200:  #ddd4cc;
+  --gray-100:  #ede8e3;
+  --gray-50:   #f5f1ed;
   --white:     #ffffff;
 
   /* Semantic */
@@ -36,6 +36,7 @@
   --primary-dark:   var(--green-800);
   --primary-light:  var(--green-500);
   --accent:         var(--green-400);
+  --accent-light:   var(--green-300);
   --surface:        var(--white);
   --surface-alt:    var(--gray-50);
   --surface-tint:   var(--green-50);
@@ -54,10 +55,10 @@
   --r-2xl: 48px;
 
   /* Shadows */
-  --shadow-sm:  0 1px 3px rgba(0,60,30,0.08), 0 1px 2px rgba(0,60,30,0.06);
-  --shadow-md:  0 4px 16px rgba(0,60,30,0.10), 0 2px 6px rgba(0,60,30,0.07);
-  --shadow-lg:  0 12px 40px rgba(0,60,30,0.13), 0 4px 12px rgba(0,60,30,0.08);
-  --shadow-xl:  0 24px 64px rgba(0,60,30,0.16);
+  --shadow-sm:  0 1px 3px rgba(60,30,10,0.08), 0 1px 2px rgba(60,30,10,0.06);
+  --shadow-md:  0 4px 16px rgba(60,30,10,0.10), 0 2px 6px rgba(60,30,10,0.07);
+  --shadow-lg:  0 12px 40px rgba(60,30,10,0.13), 0 4px 12px rgba(60,30,10,0.08);
+  --shadow-xl:  0 24px 64px rgba(60,30,10,0.16);
 
   /* Motion */
   --ease:     cubic-bezier(0.4, 0, 0.2, 1);

@@ -4,6 +4,77 @@ All notable changes to this project are documented here.
 
 ---
 
+## [4.1.0] — 2026-06-01 — Translation Fix & Google Maps
+
+**Deployed:** https://rdmedcare-new.netlify.app
+**Commits:** `f7066d5`, `9928960`, `9486a53`, `a443335`
+
+### Fixed
+
+- `assets/js/lang.js` — added missing `contact_hero_title` and `contact_hero_desc` keys to both `en` and `th` sections; page hero was rendering raw key names instead of translated text
+
+### Added (user commits)
+
+- `contact.html` — Google Maps embed for 497 Udomsuk Road, Bangna, Bangkok 10260
+- `contact.html` — real phone numbers, LINE ID, address, and business hours entered directly
+
+---
+
+## [4.0.0] — 2026-06-01 — Real Contact Info, CSS Fixes, 404 Page
+
+**Deployed:** https://rdmedcare-new.netlify.app
+**Commit:** `fb6a9b9`
+
+### Added
+
+- `404.html` — proper not-found page with navigation links back to site
+- `assets/css/styles.css` — 10 missing CSS class definitions added: `solution-item`, `solution-img`, `solution-tag`, `solution-features`, `why-card`, `why-icon`, `section-dark`, `cta-section`, `contact-form-wrap`, `contact-info-card`, `contact-item`, `map-placeholder`
+
+### Changed
+
+**Contact info (all 5 pages):**
+- Phone: `+66 2-XXX-XXXX` → `02-136-3479 / 02-397-0287`
+- Mobile / LINE: `+66 8X-XXX-XXXX` → `090-971-6299 / LINE ID: RDmedcare`
+- Address: placeholder → `497 Udomsuk Road, Bangna Sub District, Bangna District, Bangkok 10260`
+- Business hours: `08:00–17:00 Mon–Fri` → `09:00–17:00 Mon–Fri`
+- Copyright: `© 2024` → `© 2026`
+
+**Canonical URLs (4 secondary pages):**
+- `solutions.html`, `about.html`, `contact.html`, `products.html`: `rdmedcare.netlify.app` → `rdmedcare-new.netlify.app`
+- `sitemap.xml` and `robots.txt` URLs updated to match
+
+**about.html:**
+- Removed fake stats section (500+ Partner Hospitals, 10,000+ Devices, 98% Uptime) → replaced with real certifications bar (ISO 13485, CE Mark, Thai FDA, 15+ Years)
+- Removed incorrect "FDA Cleared (US FDA)" claim → replaced with "After-Sales Service" card
+- Replaced emoji icons (`🏅 🇪🇺 🇹🇭 🗺️ 🔔`) in certifications and why sections with stroke SVG icons
+- Fixed `class="section why-section"` → `class="section section-dark"` (white-on-white bug)
+
+**solutions.html:**
+- Replaced 4 emoji solution images (`🏥 💓 🔬 🛏️`) with inline SVG medical illustrations (ICU monitor, ECG/heart, surgical precision, general ward bed)
+- Replaced emoji icons in why section with stroke SVGs
+- Fixed `class="section why-section"` → `class="section section-dark"`
+
+**Footer (solutions.html, about.html, contact.html, products.html):**
+- Replaced emoji social icons (`📘 💬 ▶️ 💼`) with SVG icons + real URLs (Facebook, YouTube, LinkedIn)
+- Updated product list to use real model names (H-80A, HS-20A, BLT V6, ECG E65, TT20)
+
+**Forms:**
+- `index.html` + `contact.html`: added `name="contact" netlify` attributes for Netlify Forms
+
+**products.html:**
+- Added `loading="lazy"` to all 5 product `<img>` tags
+
+**netlify.toml:**
+- 404 fallback changed from `index.html` → `404.html`
+
+### Removed
+
+- Emoji placeholders in solutions.html solution image containers
+- Emoji icons in about.html and solutions.html why/certifications sections
+- Fake unverifiable statistics from about.html
+
+---
+
 ## [3.0.0] — 2026-06-01 — Real Product Photography
 
 **Deployed:** https://rdmedcare-new.netlify.app

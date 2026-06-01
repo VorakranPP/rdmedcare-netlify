@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location – update with actual Netlify URL or custom domain
-Sitemap: https://rdmedcare.netlify.app/sitemap.xml
+Sitemap: https://rdmedcare-new.netlify.app/sitemap.xml

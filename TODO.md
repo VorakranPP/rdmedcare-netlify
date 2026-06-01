@@ -6,13 +6,11 @@
 
 ## CRITICAL — Needs real data from client
 
-These items are blocked until the client provides information.
-
-- [ ] **Phone number** — replace `+66 2-XXX-XXXX` in all 5 pages and footer
-- [ ] **Mobile / LINE number** — replace `+66 8X-XXX-XXXX`
-- [ ] **Full office address** — replace `XX/XX ถนน [...] กรุงเทพมหานคร 10XXX`
-- [ ] **Google Maps embed** — add real `<iframe>` in contact.html map placeholder
-- [ ] **Copyright year** — confirm `© 2024` is correct or update to `© 2025`
+- [x] **Phone number** — 02-136-3479 / 02-397-0287 (updated all pages)
+- [x] **Mobile / LINE number** — 090-971-6299 / LINE ID: RDmedcare (updated all pages)
+- [x] **Full office address** — 497 Udomsuk Road, Bangna, Bangkok 10260 (updated all pages)
+- [x] **Copyright year** — updated to © 2026
+- [ ] **Google Maps embed** — add real `<iframe>` in contact.html map placeholder (LINE ID confirmed: RDmedcare)
 
 ---
 
@@ -95,14 +93,23 @@ These items are blocked until the client provides information.
 
 ---
 
-## NEEDS COMMIT — Changes deployed to Netlify but not yet committed to Git
+## COMPLETED IN v4.0 (2026-06-01)
 
-- [ ] **Commit staged changes** — all changes from 2026-06-01 are staged but not committed. Run:
-  ```bash
-  git add assets/images/products/ assets/css/styles.css index.html products.html PROJECT_CONTEXT.md TODO.md CHANGELOG.md
-  git commit -m "Restore real product photos; replace emoji placeholders; add project docs"
-  git push
-  ```
+- [x] Fix canonical URLs on all 4 secondary pages (products, solutions, about, contact)
+- [x] Fix sitemap.xml and robots.txt URLs
+- [x] Replace footer emoji social icons with SVG + real links on all secondary pages
+- [x] Remove fake statistics from about.html (500+ hospitals, 98% uptime)
+- [x] Replace about.html certifications (removed incorrect US FDA claim)
+- [x] Replace solutions.html emoji placeholders with SVG medical illustrations
+- [x] Replace emoji icons in why/certifications sections with stroke SVG
+- [x] Add missing CSS classes (solution-item, why-card, cta-section, contact-form-wrap, etc.)
+- [x] Real contact info — phones, address, LINE ID
+- [x] Business hours corrected: Mon–Fri 09:00–17:00
+- [x] Copyright updated to © 2026
+- [x] Netlify Forms attribute added to contact forms
+- [x] Lazy loading added to product images in products.html
+- [x] Created proper 404.html
+- [x] netlify.toml updated to serve 404.html on 404
 
 ---
 

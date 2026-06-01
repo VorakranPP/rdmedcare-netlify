@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Replace https://rdmedcare.netlify.app with your actual domain once connected -->
+<!-- Domain: rdmedcare-new.netlify.app — update if custom domain is connected -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://rdmedcare.netlify.app/</loc>
-    <lastmod>2024-01-01</lastmod>
+    <loc>https://rdmedcare-new.netlify.app/</loc>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="th" href="https://rdmedcare.netlify.app/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rdmedcare.netlify.app/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rdmedcare-new.netlify.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rdmedcare-new.netlify.app/" />
   </url>
 
   <url>
-    <loc>https://rdmedcare.netlify.app/products.html</loc>
-    <lastmod>2024-01-01</lastmod>
+    <loc>https://rdmedcare-new.netlify.app/products.html</loc>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="th" href="https://rdmedcare.netlify.app/products.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rdmedcare.netlify.app/products.html" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rdmedcare-new.netlify.app/products.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rdmedcare-new.netlify.app/products.html" />
   </url>
 
   <url>
-    <loc>https://rdmedcare.netlify.app/solutions.html</loc>
-    <lastmod>2024-01-01</lastmod>
+    <loc>https://rdmedcare-new.netlify.app/solutions.html</loc>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="th" href="https://rdmedcare.netlify.app/solutions.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rdmedcare.netlify.app/solutions.html" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rdmedcare-new.netlify.app/solutions.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rdmedcare-new.netlify.app/solutions.html" />
   </url>
 
   <url>
-    <loc>https://rdmedcare.netlify.app/about.html</loc>
-    <lastmod>2024-01-01</lastmod>
+    <loc>https://rdmedcare-new.netlify.app/about.html</loc>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="th" href="https://rdmedcare.netlify.app/about.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rdmedcare.netlify.app/about.html" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rdmedcare-new.netlify.app/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rdmedcare-new.netlify.app/about.html" />
   </url>
 
   <url>
-    <loc>https://rdmedcare.netlify.app/contact.html</loc>
-    <lastmod>2024-01-01</lastmod>
+    <loc>https://rdmedcare-new.netlify.app/contact.html</loc>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="th" href="https://rdmedcare.netlify.app/contact.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://rdmedcare.netlify.app/contact.html" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rdmedcare-new.netlify.app/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://rdmedcare-new.netlify.app/contact.html" />
   </url>
 
 </urlset>

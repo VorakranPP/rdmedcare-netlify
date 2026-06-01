@@ -1209,6 +1209,163 @@ textarea.form-control { resize: vertical; min-height: 120px; }
 .hidden       { display: none !important; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
 
+/* ─── Solutions page ─────────────────────────────────────── */
+.solution-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 3.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.solution-item:last-child { border-bottom: none; }
+.solution-item.reverse .solution-img { order: 2; }
+.solution-item.reverse > div:last-child { order: 1; }
+@media (max-width: 768px) {
+  .solution-item { grid-template-columns: 1fr; gap: 2rem; padding: 2.5rem 0; }
+  .solution-item.reverse .solution-img { order: 0; }
+  .solution-item.reverse > div:last-child { order: 0; }
+}
+.solution-img {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--green-800) 0%, var(--green-600) 100%);
+  border: 1px solid var(--green-700);
+}
+.solution-img svg { width: 70%; height: 70%; opacity: 0.9; }
+.solution-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: var(--green-50);
+  border: 1px solid var(--green-200);
+  border-radius: 999px;
+  padding: 0.2rem 0.85rem;
+  margin-bottom: 0.875rem;
+}
+.solution-title { font-size: clamp(1.2rem, 2.5vw, 1.5rem); margin-bottom: 0.875rem; }
+.solution-desc  { color: var(--text-secondary); line-height: 1.75; margin-bottom: 1.25rem; }
+.solution-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.solution-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+.solution-features li::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+  flex-shrink: 0;
+}
+
+/* ─── Why-card (dark-background variant) ─────────────────── */
+.why-card {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--r-lg);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: var(--trans);
+}
+.why-card:hover { background: rgba(255,255,255,0.12); }
+.why-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px; height: 56px;
+  border-radius: var(--r-md);
+  background: rgba(255,255,255,0.1);
+  margin: 0 auto 1.125rem;
+}
+.why-icon svg { width: 28px; height: 28px; stroke: rgba(255,255,255,0.9); }
+.why-card .why-title { color: var(--white); font-weight: 700; font-size: 0.97rem; margin-bottom: 0.4rem; }
+.why-card .why-desc  { font-size: 0.85rem; color: rgba(255,255,255,0.65); line-height: 1.65; }
+
+/* ─── Dark section (solutions/about why + certs sections) ─── */
+.section-dark {
+  background: linear-gradient(135deg, var(--green-900) 0%, var(--green-800) 100%);
+}
+
+/* ─── CTA section (secondary pages) ─────────────────────── */
+.cta-section {
+  background: linear-gradient(135deg, var(--green-900) 0%, var(--green-700) 100%);
+  position: relative;
+  overflow: hidden;
+}
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Crect x='34' y='10' width='12' height='60'/%3E%3Crect x='10' y='34' width='60' height='12'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ─── Contact page ───────────────────────────────────────── */
+.contact-form-wrap {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+}
+@media (max-width: 600px) { .contact-form-wrap { padding: 1.5rem; } }
+.contact-info-card {
+  background: linear-gradient(135deg, var(--green-800), var(--green-600));
+  border-radius: var(--r-xl);
+  padding: 2rem 1.75rem;
+  color: var(--white);
+}
+.contact-info-title { color: var(--white); font-size: 1.15rem; font-weight: 700; margin-bottom: 0.4rem; }
+.contact-info-desc  { color: rgba(255,255,255,0.7); font-size: 0.875rem; margin-bottom: 1.75rem; line-height: 1.6; }
+.contact-item {
+  display: flex;
+  gap: 0.875rem;
+  align-items: flex-start;
+  margin-bottom: 1.125rem;
+}
+.contact-item-icon {
+  width: 38px; height: 38px;
+  background: rgba(255,255,255,0.12);
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.contact-item-label { font-size: 0.7rem; color: rgba(255,255,255,0.5); margin-bottom: 0.15rem; }
+.contact-item-value { font-size: 0.9rem; font-weight: 600; color: var(--white); }
+.map-placeholder {
+  margin-top: 1.5rem;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--r-md);
+  background: rgba(255,255,255,0.07);
+  border: 1px dashed rgba(255,255,255,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: rgba(255,255,255,0.4);
+  font-size: 0.8rem;
+}
+
 /* ─── Responsive ─────────────────────────────────────────── */
 @media (max-width: 768px) {
   .section { padding-block: 3.5rem; }

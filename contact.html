@@ -6,10 +6,10 @@
   <title>Contact – RD Medcare Medical Equipment Thailand</title>
   <meta name="description" content="ติดต่อ RD Medcare สำหรับข้อมูลเกี่ยวกับอุปกรณ์การแพทย์ ขอใบเสนอราคา หรือนัดหมายสาธิตผลิตภัณฑ์" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://rdmedcare.netlify.app/contact.html" />
+  <link rel="canonical" href="https://rdmedcare-new.netlify.app/contact.html" />
   <meta property="og:title"       content="Contact RD Medcare – Medical Equipment Thailand" />
   <meta property="og:description" content="Get in touch with our medical equipment specialists for quotes and product demonstrations." />
-  <meta property="og:url"         content="https://rdmedcare.netlify.app/contact.html" />
+  <meta property="og:url"         content="https://rdmedcare-new.netlify.app/contact.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -88,7 +88,7 @@
         <h2 style="font-size:1.4rem;color:var(--primary);margin-bottom:2rem;" data-i18n="form_title">
           Send Us a Message
         </h2>
-        <form id="contactForm" novalidate>
+        <form id="contactForm" name="contact" netlify novalidate>
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" data-i18n="form_name">Full Name</label>
@@ -140,19 +140,20 @@
             Reach out via any channel and we'll respond within one business day.
           </p>
 
-          <!-- REPLACE: Update all contact details with real information -->
           <div class="contact-item">
             <div class="contact-item-icon">📞</div>
             <div>
               <div class="contact-item-label">Phone</div>
-              <div class="contact-item-value">+66 2-XXX-XXXX</div>
+              <div class="contact-item-value">02-136-3479</div>
+              <div class="contact-item-value">02-397-0287</div>
             </div>
           </div>
           <div class="contact-item">
             <div class="contact-item-icon">📱</div>
             <div>
               <div class="contact-item-label">Mobile / LINE</div>
-              <div class="contact-item-value">+66 8X-XXX-XXXX</div>
+              <div class="contact-item-value">090-971-6299</div>
+              <div class="contact-item-value" style="font-size:0.8rem;opacity:0.75;">LINE ID: RDmedcare</div>
             </div>
           </div>
           <div class="contact-item">
@@ -166,21 +167,21 @@
             <div class="contact-item-icon">📍</div>
             <div>
               <div class="contact-item-label">Address</div>
-              <!-- REPLACE: with real address -->
-              <div class="contact-item-value">XX/XX ถนน [...] แขวง [...] เขต [...] กรุงเทพมหานคร 10XXX</div>
+              <div class="contact-item-value">497 Udomsuk Road, Bangna Sub District, Bangna District, Bangkok 10260</div>
             </div>
           </div>
           <div class="contact-item">
             <div class="contact-item-icon">⏰</div>
             <div>
               <div class="contact-item-label">Business Hours</div>
-              <div class="contact-item-value">Mon–Fri: 8:00–17:00</div>
+              <div class="contact-item-value">Mon–Fri: 09:00–17:00</div>
             </div>
           </div>
 
-          <!-- Map placeholder: REPLACE with real Google Maps embed -->
-          <div class="map-placeholder" title="Replace with Google Maps embed iframe">
-            🗺️
+          <!-- Map placeholder: Replace with Google Maps embed when available -->
+          <div class="map-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:32px;height:32px;opacity:0.4;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span style="font-size:0.75rem;opacity:0.5;">Map coming soon</span>
           </div>
         </div>
       </div>
@@ -237,10 +238,18 @@
         </div>
         <p class="footer-tagline" data-i18n="footer_tagline">Advancing healthcare through certified medical equipment and technology solutions.</p>
         <div class="footer-socials">
-          <a href="#" class="social-link" aria-label="Facebook">📘</a>
-          <a href="#" class="social-link" aria-label="LINE">💬</a>
-          <a href="#" class="social-link" aria-label="YouTube">▶️</a>
-          <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+          <a href="https://www.facebook.com/RDMedcare" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LINE">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 11.5C21 7.36 16.97 4 12 4S3 7.36 3 11.5c0 3.54 3.14 6.51 7.38 7.07.29.06.68.19.78.44.09.22.06.57.03.79l-.13.78c-.04.22-.18.88.77.48S17.4 18.11 19.3 16h.01c1.3-1.42 2.7-3.47 2.7-4.5z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UCJwEmMHjLfQvIDCD9JPSnoQ" class="social-link" aria-label="YouTube" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+          </a>
+          <a href="https://th.linkedin.com/in/rd-medcare-b5319b108" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
         </div>
       </div>
       <div>
@@ -263,13 +272,13 @@
       </div>
       <div>
         <div class="footer-col-title" data-i18n="ft_contact">Contact</div>
-        <div class="footer-contact-item"><span>📞</span><span>+66 2-XXX-XXXX</span></div>
+        <div class="footer-contact-item"><span>📞</span><span>02-136-3479 / 02-397-0287</span></div>
         <div class="footer-contact-item"><span>📧</span><span>info@rdmedcare.com</span></div>
-        <div class="footer-contact-item"><span>📍</span><span>Bangkok, Thailand</span></div>
+        <div class="footer-contact-item"><span>📍</span><span>497 Udomsuk Rd, Bangna, Bangkok 10260</span></div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p data-i18n="footer_copy">© 2024 RD Medcare. All rights reserved.</p>
+      <p data-i18n="footer_copy">© 2026 RD Medcare. All rights reserved.</p>
       <div class="footer-legal">
         <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
         <a href="#" data-i18n="footer_terms">Terms of Use</a>

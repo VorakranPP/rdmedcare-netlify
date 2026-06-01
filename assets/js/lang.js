@@ -80,6 +80,8 @@ const translations = {
     svc5_title:'Warranty Services',       svc5_desc:'Comprehensive warranty coverage with genuine OEM parts and full traceability.',
 
     /* Contact */
+    contact_hero_title: 'Get in Touch',
+    contact_hero_desc:  'Our team is ready to help you find the right medical equipment solutions.',
     contact_eyebrow:  'Get in Touch',
     contact_title:    'Speak with a Medical Specialist',
     contact_lead:     'Tell us about your facility\'s needs and our team will recommend the most suitable solutions.',
@@ -210,6 +212,8 @@ const translations = {
     svc5_title:'บริการรับประกัน',    svc5_desc:'การรับประกันครอบคลุมพร้อมอะไหล่ OEM แท้และการตรวจสอบย้อนกลับ',
 
     /* Contact */
+    contact_hero_title: 'ติดต่อเรา',
+    contact_hero_desc:  'ทีมงานของเราพร้อมช่วยคุณค้นหาโซลูชันอุปกรณ์การแพทย์ที่เหมาะสม',
     contact_eyebrow:  'ติดต่อเรา',
     contact_title:    'พูดคุยกับผู้เชี่ยวชาญทางการแพทย์',
     contact_lead:     'บอกเราเกี่ยวกับความต้องการของสถานพยาบาลคุณ และทีมของเราจะแนะนำโซลูชันที่เหมาะสมที่สุด',

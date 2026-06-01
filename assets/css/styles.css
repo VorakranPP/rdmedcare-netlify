@@ -508,41 +508,24 @@ small { font-size: 0.875rem; }
   position: relative;
 }
 .hero-img-frame {
-  aspect-ratio: 1;
-  max-width: 480px;
+  aspect-ratio: 4/5;
+  max-width: 400px;
   margin-inline: auto;
   border-radius: var(--r-2xl);
   overflow: hidden;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1.5rem;
   position: relative;
-  /* REPLACE: with real medical hero image */
 }
 .hero-img-frame img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-.hero-img-placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2rem;
-  text-align: center;
-}
-.hero-img-placeholder .placeholder-icon {
-  font-size: 7rem;
-  opacity: 0.5;
-  line-height: 1;
-}
-.hero-img-placeholder p {
-  font-size: 0.78rem;
-  color: rgba(255,255,255,0.35);
+  object-fit: contain;
+  filter: drop-shadow(0 8px 32px rgba(0,0,0,0.18));
 }
 /* Floating stat cards */
 .hero-stat-card {
@@ -572,6 +555,13 @@ small { font-size: 0.875rem; }
   font-size: 1.25rem;
   flex-shrink: 0;
 }
+/* ─── SVG Icon sizing ────────────────────────────────────── */
+.sol-icon svg,
+.service-icon svg,
+.why-item-icon svg { width: 26px; height: 26px; display: block; }
+.stat-card-icon svg { width: 20px; height: 20px; display: block; }
+.contact-detail-icon svg { width: 18px; height: 18px; display: block; }
+.social-link svg { width: 15px; height: 15px; display: block; }
 .stat-card-info .label { font-size: 0.68rem; color: var(--text-muted); line-height: 1; }
 .stat-card-info .value { font-size: 1rem; font-weight: 700; color: var(--green-800); }
 .stat-card-a { bottom: 12%; left: -6%; }
@@ -669,18 +659,28 @@ small { font-size: 0.875rem; }
 .product-card:hover { border-color: var(--green-300); box-shadow: var(--shadow-lg); transform: translateY(-4px); }
 .product-card-image {
   aspect-ratio: 4/3;
-  background: linear-gradient(135deg, var(--gray-100), var(--green-50));
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
-  font-size: 5rem;
-  /* REPLACE: with real product image */
+  padding: 1.25rem;
 }
 .product-card-image img {
   width: 100%; height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  transition: transform 0.4s var(--ease);
+}
+.product-card:hover .product-card-image img { transform: scale(1.05); }
+.product-card-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 0.375rem;
 }
 .product-cat-badge {
   position: absolute;
@@ -774,13 +774,31 @@ small { font-size: 0.875rem; }
   border-radius: var(--r-xl);
   overflow: hidden;
   aspect-ratio: 1;
-  background: linear-gradient(135deg, var(--green-50), var(--green-100));
+  background: var(--green-50);
+  border: 1px solid var(--green-200);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 9rem;
-  /* REPLACE: real medical team / equipment image */
+  padding: 1.25rem;
 }
+.why-product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  width: 100%;
+  height: 100%;
+}
+.why-product-grid img {
+  aspect-ratio: 1;
+  width: 100%;
+  object-fit: contain;
+  border-radius: var(--r-sm);
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+  transition: transform 0.3s var(--ease);
+}
+.why-product-grid img:hover { transform: scale(1.04); }
 .why-items { display: flex; flex-direction: column; gap: 1rem; }
 .why-item {
   display: flex;
@@ -811,32 +829,56 @@ small { font-size: 0.875rem; }
 .partners-section { background: var(--surface-alt); }
 .partner-logo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
   margin-top: 2.5rem;
 }
 .partner-logo-item {
   background: var(--white);
   border: 1px solid var(--border);
-  border-radius: var(--r-md);
-  padding: 1.25rem 1rem;
+  border-radius: var(--r-lg);
+  padding: 1.75rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.625rem;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--text-secondary);
+  gap: 0.75rem;
   text-align: center;
   transition: var(--trans);
-  /* REPLACE: with real partner logo images */
 }
 .partner-logo-item:hover {
   border-color: var(--green-300);
-  color: var(--primary);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
 }
-.partner-icon { font-size: 1.75rem; }
+.partner-brand-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+.partner-brand-cat {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+}
+.partner-brand-desc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+.partner-brand-mark {
+  width: 52px; height: 52px;
+  border-radius: var(--r-md);
+  background: var(--green-50);
+  border: 1px solid var(--green-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+}
+.partner-brand-mark svg { width: 26px; height: 26px; }
 
 /* ─── Service & Support ──────────────────────────────────── */
 .service-section { background: var(--surface-tint); }

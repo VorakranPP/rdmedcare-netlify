@@ -14,19 +14,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a2d6e'/%3E%3Ctext y='72' x='50' text-anchor='middle' font-size='60' fill='%2300b4d8'%3E%E2%9A%95%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23006b3c'/%3E%3Crect x='40' y='15' width='20' height='70' fill='%23ffffff'/%3E%3Crect x='15' y='40' width='70' height='20' fill='%23ffffff'/%3E%3C/svg%3E" />
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ══ NAVBAR ════════════════════════════════════════════════ -->
 <nav class="navbar" id="navbar">
   <div class="container">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <div class="nav-logo-icon">⚕</div>
+        <div class="nav-logo-mark">
+          <svg viewBox="0 0 24 24"><rect x="10" y="2" width="4" height="20"/><rect x="2" y="10" width="20" height="4"/></svg>
+        </div>
         <div class="nav-logo-text">
           <span class="nav-logo-name">RD Medcare</span>
-          <span class="nav-logo-tagline">Medical Solutions</span>
+          <span class="nav-logo-sub">Medical Solutions</span>
         </div>
       </a>
       <ul class="nav-links">
@@ -34,15 +36,17 @@
         <li><a href="products.html" data-i18n="nav_products">Products</a></li>
         <li><a href="solutions.html"data-i18n="nav_solutions">Solutions</a></li>
         <li><a href="about.html"    data-i18n="nav_about">About</a></li>
-        <li><a href="contact.html"  data-i18n="nav_contact" class="active">Contact</a></li>
+        <li><a href="contact.html"  data-i18n="nav_contact">Contact</a></li>
       </ul>
-      <div class="nav-right">
+      <div class="nav-controls">
         <div class="lang-switcher">
           <button class="lang-btn" data-lang="th">TH</button>
           <button class="lang-btn" data-lang="en">EN</button>
         </div>
-        <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="nav_cta">Get a Quote</a>
-        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta" data-i18n="nav_cta">Contact Specialist</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </div>
@@ -53,7 +57,10 @@
   <a href="solutions.html"data-i18n="nav_solutions">Solutions</a>
   <a href="about.html"    data-i18n="nav_about">About</a>
   <a href="contact.html"  data-i18n="nav_contact">Contact</a>
-  <a href="contact.html" class="btn btn-primary" data-i18n="nav_cta">Get a Quote</a>
+  <div class="lang-switcher mt-3">
+    <button class="lang-btn" data-lang="th">TH</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
 </div>
 
 <!-- PAGE HERO -->
@@ -78,32 +85,32 @@
 
       <!-- Contact Form -->
       <div class="contact-form-wrap fade-up">
-        <h2 style="font-size:1.4rem;color:var(--primary);margin-bottom:2rem;" data-i18n="contact_form_title">
+        <h2 style="font-size:1.4rem;color:var(--primary);margin-bottom:2rem;" data-i18n="form_title">
           Send Us a Message
         </h2>
         <form id="contactForm" novalidate>
           <div class="form-row">
             <div class="form-group">
-              <label class="form-label" data-i18n="contact_form_name">Full Name</label>
+              <label class="form-label" data-i18n="form_name">Full Name</label>
               <input class="form-control" type="text" name="name" required autocomplete="name" />
             </div>
             <div class="form-group">
-              <label class="form-label" data-i18n="contact_form_email">Email Address</label>
+              <label class="form-label" data-i18n="form_email">Email Address</label>
               <input class="form-control" type="email" name="email" required autocomplete="email" />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label class="form-label" data-i18n="contact_form_phone">Phone Number</label>
+              <label class="form-label" data-i18n="form_phone">Phone Number</label>
               <input class="form-control" type="tel" name="phone" autocomplete="tel" />
             </div>
             <div class="form-group">
-              <label class="form-label" data-i18n="contact_form_org">Organization / Hospital</label>
+              <label class="form-label" data-i18n="form_org">Organization / Hospital</label>
               <input class="form-control" type="text" name="organization" autocomplete="organization" />
             </div>
           </div>
           <div class="form-group">
-            <label class="form-label" data-i18n="contact_form_product">Product Interest</label>
+            <label class="form-label" data-i18n="form_interest">Product Interest</label>
             <select class="form-control" name="product">
               <option value="">— Select Product —</option>
               <option value="hfh">High Flow Humidifier</option>
@@ -116,10 +123,10 @@
             </select>
           </div>
           <div class="form-group">
-            <label class="form-label" data-i18n="contact_form_msg">Your Message</label>
+            <label class="form-label" data-i18n="form_msg">Your Message</label>
             <textarea class="form-control" name="message" rows="5" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary form-submit" data-i18n="contact_form_submit">
+          <button type="submit" class="btn btn-primary form-submit" data-i18n="form_submit">
             Send Message
           </button>
         </form>
@@ -128,8 +135,8 @@
       <!-- Contact Info -->
       <div>
         <div class="contact-info-card fade-up">
-          <h3 class="contact-info-title" data-i18n="contact_info_title">Contact Information</h3>
-          <p class="contact-info-desc"  data-i18n="contact_info_desc">
+          <h3 class="contact-info-title" data-i18n="info_title">Contact Information</h3>
+          <p class="contact-info-desc"  data-i18n="info_desc">
             Reach out via any channel and we'll respond within one business day.
           </p>
 
@@ -193,44 +200,51 @@
         <div class="why-card" style="background:white;border-color:var(--gray-200);text-align:center;padding:2rem;">
           <div style="font-size:2.5rem;margin-bottom:1rem;">🛒</div>
           <h4 style="color:var(--primary);margin-bottom:0.5rem;" data-i18n="nav_products">Products</h4>
-          <p style="font-size:0.88rem;color:var(--text-muted);">Browse our full equipment range</p>
+          <p style="font-size:0.88rem;color:var(--text-secondary);">Browse our full equipment range</p>
         </div>
       </a>
       <a href="solutions.html" style="text-decoration:none;">
         <div class="why-card" style="background:white;border-color:var(--gray-200);text-align:center;padding:2rem;">
           <div style="font-size:2.5rem;margin-bottom:1rem;">💡</div>
           <h4 style="color:var(--primary);margin-bottom:0.5rem;" data-i18n="nav_solutions">Solutions</h4>
-          <p style="font-size:0.88rem;color:var(--text-muted);">Find the right solution for your facility</p>
+          <p style="font-size:0.88rem;color:var(--text-secondary);">Find the right solution for your facility</p>
         </div>
       </a>
       <a href="about.html" style="text-decoration:none;">
         <div class="why-card" style="background:white;border-color:var(--gray-200);text-align:center;padding:2rem;">
           <div style="font-size:2.5rem;margin-bottom:1rem;">🤝</div>
           <h4 style="color:var(--primary);margin-bottom:0.5rem;" data-i18n="nav_about">About Us</h4>
-          <p style="font-size:0.88rem;color:var(--text-muted);">Learn about our team and mission</p>
+          <p style="font-size:0.88rem;color:var(--text-secondary);">Learn about our team and mission</p>
         </div>
       </a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="nav-logo">
-          <div class="nav-logo-icon">⚕</div>
-          <div class="nav-logo-text"><span class="nav-logo-name">RD Medcare</span><span class="nav-logo-tagline">Medical Solutions</span></div>
+          <div class="nav-logo-mark">
+            <svg viewBox="0 0 24 24"><rect x="10" y="2" width="4" height="20"/><rect x="2" y="10" width="20" height="4"/></svg>
+          </div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">RD Medcare</span>
+            <span class="nav-logo-sub">Medical Solutions</span>
+          </div>
         </div>
-        <p class="footer-desc" data-i18n="footer_desc">Advancing healthcare through precision medical equipment solutions.</p>
+        <p class="footer-tagline" data-i18n="footer_tagline">Advancing healthcare through certified medical equipment and technology solutions.</p>
         <div class="footer-socials">
-          <a href="#" class="social-btn">📘</a><a href="#" class="social-btn">💬</a>
-          <a href="#" class="social-btn">▶️</a><a href="#" class="social-btn">💼</a>
+          <a href="#" class="social-link" aria-label="Facebook">📘</a>
+          <a href="#" class="social-link" aria-label="LINE">💬</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
         </div>
       </div>
       <div>
-        <div class="footer-col-title" data-i18n="footer_products">Products</div>
+        <div class="footer-col-title" data-i18n="ft_products">Products</div>
         <ul class="footer-links">
           <li><a href="products.html#hfh">High Flow Humidifier</a></li>
           <li><a href="products.html#spo2">SpO₂ Monitor</a></li>
@@ -240,25 +254,25 @@
         </ul>
       </div>
       <div>
-        <div class="footer-col-title" data-i18n="footer_company">Company</div>
+        <div class="footer-col-title" data-i18n="ft_company">Company</div>
         <ul class="footer-links">
-          <li><a href="about.html"    data-i18n="nav_about">About</a></li>
-          <li><a href="solutions.html"data-i18n="nav_solutions">Solutions</a></li>
-          <li><a href="contact.html"  data-i18n="nav_contact">Contact</a></li>
+          <li><a href="about.html"     data-i18n="nav_about">About</a></li>
+          <li><a href="solutions.html" data-i18n="nav_solutions">Solutions</a></li>
+          <li><a href="contact.html"   data-i18n="nav_contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-col-title" data-i18n="footer_contact">Contact</div>
+        <div class="footer-col-title" data-i18n="ft_contact">Contact</div>
         <div class="footer-contact-item"><span>📞</span><span>+66 2-XXX-XXXX</span></div>
         <div class="footer-contact-item"><span>📧</span><span>info@rdmedcare.com</span></div>
         <div class="footer-contact-item"><span>📍</span><span>Bangkok, Thailand</span></div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy" data-i18n="footer_copy">© 2024 RD Medcare. All rights reserved.</p>
+      <p data-i18n="footer_copy">© 2024 RD Medcare. All rights reserved.</p>
       <div class="footer-legal">
-        <a href="#" data-i18n="footer_privacy">Privacy</a>
-        <a href="#" data-i18n="footer_terms">Terms</a>
+        <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer_terms">Terms of Use</a>
       </div>
     </div>
   </div>

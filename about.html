@@ -14,35 +14,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a2d6e'/%3E%3Ctext y='72' x='50' text-anchor='middle' font-size='60' fill='%2300b4d8'%3E%E2%9A%95%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23006b3c'/%3E%3Crect x='40' y='15' width='20' height='70' fill='%23ffffff'/%3E%3Crect x='15' y='40' width='70' height='20' fill='%23ffffff'/%3E%3C/svg%3E" />
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ══ NAVBAR ════════════════════════════════════════════════ -->
 <nav class="navbar" id="navbar">
   <div class="container">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <div class="nav-logo-icon">⚕</div>
+        <div class="nav-logo-mark">
+          <svg viewBox="0 0 24 24"><rect x="10" y="2" width="4" height="20"/><rect x="2" y="10" width="20" height="4"/></svg>
+        </div>
         <div class="nav-logo-text">
           <span class="nav-logo-name">RD Medcare</span>
-          <span class="nav-logo-tagline">Medical Solutions</span>
+          <span class="nav-logo-sub">Medical Solutions</span>
         </div>
       </a>
       <ul class="nav-links">
         <li><a href="index.html"    data-i18n="nav_home">Home</a></li>
         <li><a href="products.html" data-i18n="nav_products">Products</a></li>
         <li><a href="solutions.html"data-i18n="nav_solutions">Solutions</a></li>
-        <li><a href="about.html"    data-i18n="nav_about" class="active">About</a></li>
+        <li><a href="about.html"    data-i18n="nav_about">About</a></li>
         <li><a href="contact.html"  data-i18n="nav_contact">Contact</a></li>
       </ul>
-      <div class="nav-right">
+      <div class="nav-controls">
         <div class="lang-switcher">
           <button class="lang-btn" data-lang="th">TH</button>
           <button class="lang-btn" data-lang="en">EN</button>
         </div>
-        <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="nav_cta">Get a Quote</a>
-        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta" data-i18n="nav_cta">Contact Specialist</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </div>
@@ -53,7 +57,10 @@
   <a href="solutions.html"data-i18n="nav_solutions">Solutions</a>
   <a href="about.html"    data-i18n="nav_about">About</a>
   <a href="contact.html"  data-i18n="nav_contact">Contact</a>
-  <a href="contact.html" class="btn btn-primary" data-i18n="nav_cta">Get a Quote</a>
+  <div class="lang-switcher mt-3">
+    <button class="lang-btn" data-lang="th">TH</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
 </div>
 
 <!-- PAGE HERO -->
@@ -64,8 +71,8 @@
       <span>›</span>
       <span data-i18n="nav_about">About</span>
     </div>
-    <h1 class="page-hero-title" data-i18n="about_hero_title">About RD Medcare</h1>
-    <p class="page-hero-desc" data-i18n="about_hero_desc">
+    <h1 class="page-hero-title" data-i18n="ab_hero_title">About RD Medcare</h1>
+    <p class="page-hero-desc" data-i18n="ab_hero_desc">
       A leading medical equipment distributor committed to advancing healthcare across Thailand.
     </p>
   </div>
@@ -77,21 +84,21 @@
     <div class="grid-2" style="gap:4rem;align-items:center;">
       <!-- Image -->
       <div>
-        <div style="border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/3;background:linear-gradient(135deg,var(--gray-100),var(--gray-200));display:flex;align-items:center;justify-content:center;font-size:8rem;">
+        <div style="border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/3;background:linear-gradient(135deg,var(--gray-100),var(--gray-200));display:flex;align-items:center;justify-content:center;font-size:8rem;">
           <!-- REPLACE: <img src="assets/images/about/office.jpg" alt="RD Medcare Office" style="width:100%;height:100%;object-fit:cover;" /> -->
           🏢
         </div>
       </div>
       <!-- Text -->
       <div>
-        <span class="section-label" data-i18n="about_mission_lbl">Our Mission</span>
-        <h2 class="section-title" data-i18n="about_mission_title">Advancing Healthcare Through Innovation</h2>
-        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:1.5rem;" data-i18n="about_mission_desc">
+        <span class="section-eyebrow" data-i18n="ab_mission_ey">Our Mission</span>
+        <h2 class="section-heading" data-i18n="ab_mission_h">Advancing Healthcare Through Innovation</h2>
+        <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:1.5rem;" data-i18n="ab_mission_p">
           RD Medcare was founded with a singular vision: to make world-class medical technology accessible to every healthcare provider in Thailand.
         </p>
-        <div style="background:linear-gradient(135deg,var(--primary),#0a3d8f);border-radius:var(--radius-md);padding:1.75rem;color:white;">
-          <h3 style="color:white;margin-bottom:0.6rem;font-size:1.1rem;" data-i18n="about_vision_title">Our Vision</h3>
-          <p style="color:rgba(255,255,255,0.75);font-size:0.92rem;line-height:1.7;" data-i18n="about_vision_desc">
+        <div style="background:linear-gradient(135deg,var(--primary),#005c2e);border-radius:var(--r-md);padding:1.75rem;color:white;">
+          <h3 style="color:white;margin-bottom:0.6rem;font-size:1.1rem;" data-i18n="ab_vision_h">Our Vision</h3>
+          <p style="color:rgba(255,255,255,0.75);font-size:0.92rem;line-height:1.7;" data-i18n="ab_vision_p">
             To be the most trusted medical equipment partner in Southeast Asia.
           </p>
         </div>
@@ -104,10 +111,10 @@
 <section class="section stats-section">
   <div class="container">
     <div class="grid-4">
-      <div class="stat-card fade-up"><span class="stat-icon">🏥</span><div class="stat-number" data-count="500" data-suffix="+">0+</div><div class="stat-label" data-i18n="stat1_lbl">Partner Hospitals</div></div>
-      <div class="stat-card fade-up"><span class="stat-icon">⚙️</span><div class="stat-number" data-count="10000" data-suffix="+">0+</div><div class="stat-label" data-i18n="stat2_lbl">Devices Installed</div></div>
-      <div class="stat-card fade-up"><span class="stat-icon">🏆</span><div class="stat-number" data-count="15" data-suffix="+">0+</div><div class="stat-label" data-i18n="stat3_lbl">Years of Excellence</div></div>
-      <div class="stat-card fade-up"><span class="stat-icon">✅</span><div class="stat-number" data-count="98" data-suffix="%">0%</div><div class="stat-label" data-i18n="stat4_lbl">Uptime Guarantee</div></div>
+      <div class="stat-item fade-up"><span class="stat-icon-old">🏥</span><div class="stat-number" data-count="500" data-suffix="+">0+</div><div class="stat-label" data-i18n="stat1_lbl">Partner Hospitals</div></div>
+      <div class="stat-item fade-up"><span class="stat-icon-old">⚙️</span><div class="stat-number" data-count="10000" data-suffix="+">0+</div><div class="stat-label" data-i18n="stat2_lbl">Devices Installed</div></div>
+      <div class="stat-item fade-up"><span class="stat-icon-old">🏆</span><div class="stat-number" data-count="15" data-suffix="+">0+</div><div class="stat-label" data-i18n="stat3_lbl">Years of Excellence</div></div>
+      <div class="stat-item fade-up"><span class="stat-icon-old">✅</span><div class="stat-number" data-count="98" data-suffix="%">0%</div><div class="stat-label" data-i18n="stat4_lbl">Uptime Guarantee</div></div>
     </div>
   </div>
 </section>
@@ -116,13 +123,13 @@
 <section class="section">
   <div class="container">
     <div class="text-center">
-      <span class="section-label" data-i18n="about_team_lbl">Our Team</span>
-      <h2 class="section-title" data-i18n="about_team_title">Leadership Team</h2>
+      <span class="section-eyebrow" data-i18n="ab_team_ey">Our Team</span>
+      <h2 class="section-heading" data-i18n="ab_team_h">Leadership Team</h2>
     </div>
     <div class="grid-3">
       <!-- REPLACE: Add real team member photos -->
       <div class="team-card fade-up">
-        <div class="team-img"><!-- REPLACE: <img src="assets/images/team/ceo.jpg" alt="CEO" style="width:100%;height:100%;object-fit:cover;" /> -->👤</div>
+        <div class="team-photo"><!-- REPLACE: <img src="assets/images/team/ceo.jpg" alt="CEO" style="width:100%;height:100%;object-fit:cover;" /> -->👤</div>
         <div class="team-body">
           <div class="team-name">คุณ [ชื่อ CEO]</div>
           <div class="team-role">Chief Executive Officer</div>
@@ -130,7 +137,7 @@
         </div>
       </div>
       <div class="team-card fade-up">
-        <div class="team-img"><!-- REPLACE: <img src="assets/images/team/cto.jpg" alt="CTO" style="width:100%;height:100%;object-fit:cover;" /> -->👤</div>
+        <div class="team-photo"><!-- REPLACE: <img src="assets/images/team/cto.jpg" alt="CTO" style="width:100%;height:100%;object-fit:cover;" /> -->👤</div>
         <div class="team-body">
           <div class="team-name">คุณ [ชื่อ CTO]</div>
           <div class="team-role">Chief Technical Officer</div>
@@ -138,7 +145,7 @@
         </div>
       </div>
       <div class="team-card fade-up">
-        <div class="team-img"><!-- REPLACE: <img src="assets/images/team/cso.jpg" alt="CSO" style="width:100%;height:100%;object-fit:cover;" /> -->👤</div>
+        <div class="team-photo"><!-- REPLACE: <img src="assets/images/team/cso.jpg" alt="CSO" style="width:100%;height:100%;object-fit:cover;" /> -->👤</div>
         <div class="team-body">
           <div class="team-name">คุณ [ชื่อ CSO]</div>
           <div class="team-role">Chief Sales Officer</div>
@@ -154,9 +161,9 @@
   <div class="container">
     <div class="grid-2" style="gap:4rem;align-items:start;">
       <div>
-        <span class="section-label" data-i18n="about_history_lbl">Our Journey</span>
-        <h2 class="section-title" data-i18n="about_history_title">Milestones &amp; Achievements</h2>
-        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:2rem;">
+        <span class="section-eyebrow" data-i18n="ab_hist_ey">Our Journey</span>
+        <h2 class="section-heading" data-i18n="ab_hist_h">Milestones &amp; Achievements</h2>
+        <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:2rem;">
           From a small distributor to a nationwide healthcare partner, our journey reflects our commitment to excellence.
         </p>
       </div>
@@ -195,8 +202,8 @@
 <section class="section why-section">
   <div class="container">
     <div class="text-center">
-      <span class="section-label" style="background:rgba(255,255,255,0.12);color:var(--accent-light);">Certifications</span>
-      <h2 class="section-title text-white">Quality &amp; Compliance</h2>
+      <span class="section-eyebrow" style="background:rgba(255,255,255,0.12);color:var(--accent-light);">Certifications</span>
+      <h2 class="section-heading text-white">Quality &amp; Compliance</h2>
       <p class="section-subtitle" style="color:rgba(255,255,255,0.65);">All our operations and products meet the highest international standards.</p>
     </div>
     <div class="grid-4">
@@ -232,29 +239,36 @@
       <p class="cta-desc" data-i18n="cta_desc">Talk to our specialists and find the right solution.</p>
       <div class="cta-actions">
         <a href="contact.html" class="btn btn-white"   data-i18n="cta_btn1">Request a Demo</a>
-        <a href="contact.html" class="btn btn-outline" data-i18n="cta_btn2">Contact Us</a>
+        <a href="contact.html" class="btn btn-ghost" data-i18n="cta_btn2">Contact Us</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="nav-logo">
-          <div class="nav-logo-icon">⚕</div>
-          <div class="nav-logo-text"><span class="nav-logo-name">RD Medcare</span><span class="nav-logo-tagline">Medical Solutions</span></div>
+          <div class="nav-logo-mark">
+            <svg viewBox="0 0 24 24"><rect x="10" y="2" width="4" height="20"/><rect x="2" y="10" width="20" height="4"/></svg>
+          </div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">RD Medcare</span>
+            <span class="nav-logo-sub">Medical Solutions</span>
+          </div>
         </div>
-        <p class="footer-desc" data-i18n="footer_desc">Advancing healthcare through precision medical equipment solutions.</p>
+        <p class="footer-tagline" data-i18n="footer_tagline">Advancing healthcare through certified medical equipment and technology solutions.</p>
         <div class="footer-socials">
-          <a href="#" class="social-btn">📘</a><a href="#" class="social-btn">💬</a>
-          <a href="#" class="social-btn">▶️</a><a href="#" class="social-btn">💼</a>
+          <a href="#" class="social-link" aria-label="Facebook">📘</a>
+          <a href="#" class="social-link" aria-label="LINE">💬</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
         </div>
       </div>
       <div>
-        <div class="footer-col-title" data-i18n="footer_products">Products</div>
+        <div class="footer-col-title" data-i18n="ft_products">Products</div>
         <ul class="footer-links">
           <li><a href="products.html#hfh">High Flow Humidifier</a></li>
           <li><a href="products.html#spo2">SpO₂ Monitor</a></li>
@@ -264,25 +278,25 @@
         </ul>
       </div>
       <div>
-        <div class="footer-col-title" data-i18n="footer_company">Company</div>
+        <div class="footer-col-title" data-i18n="ft_company">Company</div>
         <ul class="footer-links">
-          <li><a href="about.html"    data-i18n="nav_about">About</a></li>
-          <li><a href="solutions.html"data-i18n="nav_solutions">Solutions</a></li>
-          <li><a href="contact.html"  data-i18n="nav_contact">Contact</a></li>
+          <li><a href="about.html"     data-i18n="nav_about">About</a></li>
+          <li><a href="solutions.html" data-i18n="nav_solutions">Solutions</a></li>
+          <li><a href="contact.html"   data-i18n="nav_contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-col-title" data-i18n="footer_contact">Contact</div>
+        <div class="footer-col-title" data-i18n="ft_contact">Contact</div>
         <div class="footer-contact-item"><span>📞</span><span>+66 2-XXX-XXXX</span></div>
         <div class="footer-contact-item"><span>📧</span><span>info@rdmedcare.com</span></div>
         <div class="footer-contact-item"><span>📍</span><span>Bangkok, Thailand</span></div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy" data-i18n="footer_copy">© 2024 RD Medcare. All rights reserved.</p>
+      <p data-i18n="footer_copy">© 2024 RD Medcare. All rights reserved.</p>
       <div class="footer-legal">
-        <a href="#" data-i18n="footer_privacy">Privacy</a>
-        <a href="#" data-i18n="footer_terms">Terms</a>
+        <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer_terms">Terms of Use</a>
       </div>
     </div>
   </div>

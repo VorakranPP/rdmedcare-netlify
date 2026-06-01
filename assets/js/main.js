@@ -132,11 +132,11 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => toast.classList.remove('visible'), 3500);
   };
 
-  /* ── Logo track duplication (infinite scroll) ── */
-  const logoTrack = document.querySelector('.logo-track');
-  if (logoTrack) {
-    logoTrack.innerHTML += logoTrack.innerHTML;
-  }
+  /* ── Ticker / logo track duplication (infinite scroll) ── */
+  ['.logo-track', '#tickerTrack'].forEach(sel => {
+    const el = document.querySelector(sel);
+    if (el) el.innerHTML += el.innerHTML;
+  });
 
   /* ── Smooth anchor scroll ── */
   document.querySelectorAll('a[href^="#"]').forEach(a => {

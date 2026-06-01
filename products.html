@@ -14,35 +14,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a2d6e'/%3E%3Ctext y='72' x='50' text-anchor='middle' font-size='60' fill='%2300b4d8'%3E%E2%9A%95%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23006b3c'/%3E%3Crect x='40' y='15' width='20' height='70' fill='%23ffffff'/%3E%3Crect x='15' y='40' width='70' height='20' fill='%23ffffff'/%3E%3C/svg%3E" />
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ══ NAVBAR ════════════════════════════════════════════════ -->
 <nav class="navbar" id="navbar">
   <div class="container">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <div class="nav-logo-icon">⚕</div>
+        <div class="nav-logo-mark">
+          <svg viewBox="0 0 24 24"><rect x="10" y="2" width="4" height="20"/><rect x="2" y="10" width="20" height="4"/></svg>
+        </div>
         <div class="nav-logo-text">
           <span class="nav-logo-name">RD Medcare</span>
-          <span class="nav-logo-tagline">Medical Solutions</span>
+          <span class="nav-logo-sub">Medical Solutions</span>
         </div>
       </a>
       <ul class="nav-links">
         <li><a href="index.html"    data-i18n="nav_home">Home</a></li>
-        <li><a href="products.html" data-i18n="nav_products" class="active">Products</a></li>
+        <li><a href="products.html" data-i18n="nav_products">Products</a></li>
         <li><a href="solutions.html"data-i18n="nav_solutions">Solutions</a></li>
         <li><a href="about.html"    data-i18n="nav_about">About</a></li>
         <li><a href="contact.html"  data-i18n="nav_contact">Contact</a></li>
       </ul>
-      <div class="nav-right">
+      <div class="nav-controls">
         <div class="lang-switcher">
           <button class="lang-btn" data-lang="th">TH</button>
           <button class="lang-btn" data-lang="en">EN</button>
         </div>
-        <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="nav_cta">Get a Quote</a>
-        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta" data-i18n="nav_cta">Contact Specialist</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </div>
@@ -53,7 +57,10 @@
   <a href="solutions.html"data-i18n="nav_solutions">Solutions</a>
   <a href="about.html"    data-i18n="nav_about">About</a>
   <a href="contact.html"  data-i18n="nav_contact">Contact</a>
-  <a href="contact.html" class="btn btn-primary" data-i18n="nav_cta">Get a Quote</a>
+  <div class="lang-switcher mt-3">
+    <button class="lang-btn" data-lang="th">TH</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
 </div>
 
 <!-- PAGE HERO -->
@@ -64,8 +71,8 @@
       <span>›</span>
       <span data-i18n="nav_products">Products</span>
     </div>
-    <h1 class="page-hero-title" data-i18n="products_page_title">Medical Products</h1>
-    <p class="page-hero-desc" data-i18n="products_page_desc">
+    <h1 class="page-hero-title" data-i18n="pp_title">Medical Products</h1>
+    <p class="page-hero-desc" data-i18n="pp_desc">
       Comprehensive range of precision medical devices for modern healthcare facilities.
     </p>
   </div>
@@ -77,30 +84,30 @@
 
     <!-- Filter Bar -->
     <div class="filter-bar">
-      <button class="filter-btn active" data-filter="all"        data-i18n="filter_all">All Products</button>
-      <button class="filter-btn"        data-filter="monitoring"  data-i18n="filter_monitoring">Patient Monitoring</button>
-      <button class="filter-btn"        data-filter="respiratory" data-i18n="filter_respiratory">Respiratory Care</button>
-      <button class="filter-btn"        data-filter="cardiology"  data-i18n="filter_cardiology">Cardiology</button>
-      <button class="filter-btn"        data-filter="surgical"    data-i18n="filter_surgical">Surgical</button>
-      <button class="filter-btn"        data-filter="infusion"    data-i18n="filter_infusion">Infusion</button>
+      <button class="filter-btn active" data-filter="all"        data-i18n="filt_all">All Products</button>
+      <button class="filter-btn"        data-filter="monitoring"  data-i18n="filt_mon">Patient Monitoring</button>
+      <button class="filter-btn"        data-filter="respiratory" data-i18n="filt_resp">Respiratory Care</button>
+      <button class="filter-btn"        data-filter="cardiology"  data-i18n="filt_card">Cardiology</button>
+      <button class="filter-btn"        data-filter="surgical"    data-i18n="filt_surg">Surgical</button>
+      <button class="filter-btn"        data-filter="infusion"    data-i18n="filt_inf">Infusion</button>
     </div>
 
     <div class="grid-3">
       <!-- 1. High Flow Humidifier -->
       <div class="product-card fade-up" data-category="respiratory" id="hfh">
-        <div class="product-card-img">
+        <div class="product-card-image">
           <!-- REPLACE: <img src="assets/images/products/high-flow-humidifier.jpg" alt="High Flow Humidifier" style="width:100%;height:100%;object-fit:cover;" /> -->
-          <span class="product-card-badge" data-i18n="products_badge">Featured</span>
+          <span class="product-cat-badge" data-i18n="products_badge">Featured</span>
           💨
         </div>
         <div class="product-card-body">
           <div class="product-card-tag" data-i18n="prod1_tag">Respiratory Care</div>
-          <h3 class="product-card-name" data-i18n="prod1_name">High Flow Humidifier</h3>
-          <p class="product-card-desc" data-i18n="prod1_desc">Advanced high-flow nasal cannula therapy with precise temperature and humidity control for optimal respiratory support.</p>
+          <h3 class="product-name" data-i18n="prod1_name">High Flow Humidifier</h3>
+          <p class="product-desc" data-i18n="prod1_desc">Advanced high-flow nasal cannula therapy with precise temperature and humidity control for optimal respiratory support.</p>
           <ul style="margin:0 0 1rem;padding:0;list-style:none;">
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ Flow rate: 2–60 L/min</li>
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ Temperature: 31–37°C</li>
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ FiO₂: 21–100%</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ Flow rate: 2–60 L/min</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ Temperature: 31–37°C</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ FiO₂: 21–100%</li>
           </ul>
           <div class="product-card-footer">
             <a href="contact.html" class="product-learn"><span data-i18n="prod_learn">Learn More</span> →</a>
@@ -110,18 +117,18 @@
 
       <!-- 2. SpO2 Monitor -->
       <div class="product-card fade-up" data-category="monitoring" id="spo2">
-        <div class="product-card-img">
+        <div class="product-card-image">
           <!-- REPLACE: <img src="assets/images/products/spo2-monitor.jpg" alt="SpO2 Monitor" style="width:100%;height:100%;object-fit:cover;" /> -->
           📡
         </div>
         <div class="product-card-body">
           <div class="product-card-tag" data-i18n="prod2_tag">Patient Monitoring</div>
-          <h3 class="product-card-name" data-i18n="prod2_name">SpO₂ Monitor</h3>
-          <p class="product-card-desc" data-i18n="prod2_desc">Continuous pulse oximetry monitoring with real-time alerts, waveform display and alarm management.</p>
+          <h3 class="product-name" data-i18n="prod2_name">SpO₂ Monitor</h3>
+          <p class="product-desc" data-i18n="prod2_desc">Continuous pulse oximetry monitoring with real-time alerts, waveform display and alarm management.</p>
           <ul style="margin:0 0 1rem;padding:0;list-style:none;">
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ SpO₂ accuracy: ±2%</li>
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ Waveform & trend display</li>
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ Configurable alarms</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ SpO₂ accuracy: ±2%</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ Waveform & trend display</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ Configurable alarms</li>
           </ul>
           <div class="product-card-footer">
             <a href="contact.html" class="product-learn"><span data-i18n="prod_learn">Learn More</span> →</a>
@@ -131,18 +138,18 @@
 
       <!-- 3. Patient Monitor -->
       <div class="product-card fade-up" data-category="monitoring" id="pm">
-        <div class="product-card-img">
+        <div class="product-card-image">
           <!-- REPLACE: <img src="assets/images/products/patient-monitor.jpg" alt="Patient Monitor" style="width:100%;height:100%;object-fit:cover;" /> -->
           🖥️
         </div>
         <div class="product-card-body">
           <div class="product-card-tag" data-i18n="prod3_tag">Critical Care</div>
-          <h3 class="product-card-name" data-i18n="prod3_name">Patient Monitor</h3>
-          <p class="product-card-desc" data-i18n="prod3_desc">Multi-parameter bedside monitor for comprehensive vital signs tracking in ICU and ward environments.</p>
+          <h3 class="product-name" data-i18n="prod3_name">Patient Monitor</h3>
+          <p class="product-desc" data-i18n="prod3_desc">Multi-parameter bedside monitor for comprehensive vital signs tracking in ICU and ward environments.</p>
           <ul style="margin:0 0 1rem;padding:0;list-style:none;">
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ ECG, SpO₂, NIBP, Temp, CO₂</li>
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ Central monitoring network</li>
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ 12-hour trend storage</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ ECG, SpO₂, NIBP, Temp, CO₂</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ Central monitoring network</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ 12-hour trend storage</li>
           </ul>
           <div class="product-card-footer">
             <a href="contact.html" class="product-learn"><span data-i18n="prod_learn">Learn More</span> →</a>
@@ -152,18 +159,18 @@
 
       <!-- 4. ECG System -->
       <div class="product-card fade-up" data-category="cardiology" id="ecg">
-        <div class="product-card-img">
+        <div class="product-card-image">
           <!-- REPLACE: <img src="assets/images/products/ecg-system.jpg" alt="ECG System" style="width:100%;height:100%;object-fit:cover;" /> -->
           💓
         </div>
         <div class="product-card-body">
           <div class="product-card-tag" data-i18n="prod4_tag">Cardiology</div>
-          <h3 class="product-card-name" data-i18n="prod4_name">ECG System</h3>
-          <p class="product-card-desc" data-i18n="prod4_desc">12-lead diagnostic ECG with advanced analysis algorithms, wireless connectivity and EMR integration.</p>
+          <h3 class="product-name" data-i18n="prod4_name">ECG System</h3>
+          <p class="product-desc" data-i18n="prod4_desc">12-lead diagnostic ECG with advanced analysis algorithms, wireless connectivity and EMR integration.</p>
           <ul style="margin:0 0 1rem;padding:0;list-style:none;">
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ 12-lead simultaneous acquisition</li>
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ Auto interpretation</li>
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ EMR / HIS connectivity</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ 12-lead simultaneous acquisition</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ Auto interpretation</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ EMR / HIS connectivity</li>
           </ul>
           <div class="product-card-footer">
             <a href="contact.html" class="product-learn"><span data-i18n="prod_learn">Learn More</span> →</a>
@@ -173,18 +180,18 @@
 
       <!-- 5. Tourniquet System -->
       <div class="product-card fade-up" data-category="surgical" id="tourniquet">
-        <div class="product-card-img">
+        <div class="product-card-image">
           <!-- REPLACE: <img src="assets/images/products/tourniquet.jpg" alt="Tourniquet System" style="width:100%;height:100%;object-fit:cover;" /> -->
           🩺
         </div>
         <div class="product-card-body">
           <div class="product-card-tag" data-i18n="prod5_tag">Surgical Tools</div>
-          <h3 class="product-card-name" data-i18n="prod5_name">Tourniquet System</h3>
-          <p class="product-card-desc" data-i18n="prod5_desc">Pneumatic tourniquet with dual-port capability, automatic calibration and comprehensive safety monitoring.</p>
+          <h3 class="product-name" data-i18n="prod5_name">Tourniquet System</h3>
+          <p class="product-desc" data-i18n="prod5_desc">Pneumatic tourniquet with dual-port capability, automatic calibration and comprehensive safety monitoring.</p>
           <ul style="margin:0 0 1rem;padding:0;list-style:none;">
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ Dual-limb capability</li>
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ Pressure range: 50–500 mmHg</li>
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ Auto-calibration & safety lock</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ Dual-limb capability</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ Pressure range: 50–500 mmHg</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ Auto-calibration & safety lock</li>
           </ul>
           <div class="product-card-footer">
             <a href="contact.html" class="product-learn"><span data-i18n="prod_learn">Learn More</span> →</a>
@@ -194,18 +201,18 @@
 
       <!-- 6. Infusion Pump -->
       <div class="product-card fade-up" data-category="infusion" id="infusion">
-        <div class="product-card-img">
+        <div class="product-card-image">
           <!-- REPLACE: <img src="assets/images/products/infusion-pump.jpg" alt="Infusion Pump" style="width:100%;height:100%;object-fit:cover;" /> -->
           💉
         </div>
         <div class="product-card-body">
           <div class="product-card-tag" data-i18n="prod6_tag">Infusion</div>
-          <h3 class="product-card-name" data-i18n="prod6_name">Infusion Pump</h3>
-          <p class="product-card-desc" data-i18n="prod6_desc">Precision volumetric infusion with drug library, dose error reduction and wireless network connectivity.</p>
+          <h3 class="product-name" data-i18n="prod6_name">Infusion Pump</h3>
+          <p class="product-desc" data-i18n="prod6_desc">Precision volumetric infusion with drug library, dose error reduction and wireless network connectivity.</p>
           <ul style="margin:0 0 1rem;padding:0;list-style:none;">
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ Flow: 0.1–1200 mL/hr</li>
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ Drug library with DERS</li>
-            <li style="font-size:0.82rem;color:var(--text-muted);padding:0.2rem 0;">✓ Wi-Fi enabled</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ Flow: 0.1–1200 mL/hr</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ Drug library with DERS</li>
+            <li style="font-size:0.82rem;color:var(--text-secondary);padding:0.2rem 0;">✓ Wi-Fi enabled</li>
           </ul>
           <div class="product-card-footer">
             <a href="contact.html" class="product-learn"><span data-i18n="prod_learn">Learn More</span> →</a>
@@ -224,62 +231,64 @@
       <p class="cta-desc" data-i18n="cta_desc">Talk to our specialists and find the right solution.</p>
       <div class="cta-actions">
         <a href="contact.html" class="btn btn-white"   data-i18n="cta_btn1">Request a Demo</a>
-        <a href="contact.html" class="btn btn-outline" data-i18n="cta_btn2">Contact Us</a>
+        <a href="contact.html" class="btn btn-ghost" data-i18n="cta_btn2">Contact Us</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="nav-logo">
-          <div class="nav-logo-icon">⚕</div>
+          <div class="nav-logo-mark">
+            <svg viewBox="0 0 24 24"><rect x="10" y="2" width="4" height="20"/><rect x="2" y="10" width="20" height="4"/></svg>
+          </div>
           <div class="nav-logo-text">
             <span class="nav-logo-name">RD Medcare</span>
-            <span class="nav-logo-tagline">Medical Solutions</span>
+            <span class="nav-logo-sub">Medical Solutions</span>
           </div>
         </div>
-        <p class="footer-desc" data-i18n="footer_desc">Advancing healthcare through precision medical equipment solutions.</p>
+        <p class="footer-tagline" data-i18n="footer_tagline">Advancing healthcare through certified medical equipment and technology solutions.</p>
         <div class="footer-socials">
-          <a href="#" class="social-btn">📘</a>
-          <a href="#" class="social-btn">💬</a>
-          <a href="#" class="social-btn">▶️</a>
-          <a href="#" class="social-btn">💼</a>
+          <a href="#" class="social-link" aria-label="Facebook">📘</a>
+          <a href="#" class="social-link" aria-label="LINE">💬</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
         </div>
       </div>
       <div>
-        <div class="footer-col-title" data-i18n="footer_products">Products</div>
+        <div class="footer-col-title" data-i18n="ft_products">Products</div>
         <ul class="footer-links">
-          <li><a href="#hfh">High Flow Humidifier</a></li>
-          <li><a href="#spo2">SpO₂ Monitor</a></li>
-          <li><a href="#pm">Patient Monitor</a></li>
-          <li><a href="#ecg">ECG System</a></li>
-          <li><a href="#tourniquet">Tourniquet System</a></li>
+          <li><a href="products.html#hfh">High Flow Humidifier</a></li>
+          <li><a href="products.html#spo2">SpO₂ Monitor</a></li>
+          <li><a href="products.html#pm">Patient Monitor</a></li>
+          <li><a href="products.html#ecg">ECG System</a></li>
+          <li><a href="products.html#tourniquet">Tourniquet System</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-col-title" data-i18n="footer_company">Company</div>
+        <div class="footer-col-title" data-i18n="ft_company">Company</div>
         <ul class="footer-links">
-          <li><a href="about.html"    data-i18n="nav_about">About</a></li>
-          <li><a href="solutions.html"data-i18n="nav_solutions">Solutions</a></li>
-          <li><a href="contact.html"  data-i18n="nav_contact">Contact</a></li>
+          <li><a href="about.html"     data-i18n="nav_about">About</a></li>
+          <li><a href="solutions.html" data-i18n="nav_solutions">Solutions</a></li>
+          <li><a href="contact.html"   data-i18n="nav_contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-col-title" data-i18n="footer_contact">Contact</div>
+        <div class="footer-col-title" data-i18n="ft_contact">Contact</div>
         <div class="footer-contact-item"><span>📞</span><span>+66 2-XXX-XXXX</span></div>
         <div class="footer-contact-item"><span>📧</span><span>info@rdmedcare.com</span></div>
         <div class="footer-contact-item"><span>📍</span><span>Bangkok, Thailand</span></div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy" data-i18n="footer_copy">© 2024 RD Medcare. All rights reserved.</p>
+      <p data-i18n="footer_copy">© 2024 RD Medcare. All rights reserved.</p>
       <div class="footer-legal">
-        <a href="#" data-i18n="footer_privacy">Privacy</a>
-        <a href="#" data-i18n="footer_terms">Terms</a>
+        <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer_terms">Terms of Use</a>
       </div>
     </div>
   </div>

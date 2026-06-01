@@ -1,373 +1,296 @@
 /* ============================================================
-   RD Medcare – Bilingual Language Switcher (TH / EN)
+   RD Medcare – Bilingual (TH / EN)
    ============================================================ */
-
 const translations = {
   en: {
-    /* ── Navigation ── */
-    nav_home:      'Home',
-    nav_products:  'Products',
-    nav_solutions: 'Solutions',
-    nav_about:     'About',
-    nav_contact:   'Contact',
-    nav_cta:       'Get a Quote',
+    /* Nav */
+    nav_home:'Home', nav_products:'Products', nav_solutions:'Solutions',
+    nav_about:'About', nav_contact:'Contact', nav_cta:'Contact Specialist',
 
-    /* ── Hero ── */
-    hero_badge:    'ISO 13485 Certified Medical Devices',
-    hero_title1:   'Advanced Medical',
-    hero_title2:   'Equipment Solutions',
-    hero_desc:     'RD Medcare delivers precision healthcare technology trusted by hospitals and clinics across Thailand. Elevating patient care through innovation.',
-    hero_cta1:     'Explore Products',
-    hero_cta2:     'Learn More',
-    hero_stat1_num:'500+',
-    hero_stat1_lbl:'Hospitals Served',
-    hero_stat2_num:'15+',
-    hero_stat2_lbl:'Years Experience',
-    hero_stat3_num:'98%',
-    hero_stat3_lbl:'Client Satisfaction',
-    hero_card1_lbl:'Devices Active',
-    hero_card1_val:'10,000+',
-    hero_card2_lbl:'Response Time',
-    hero_card2_val:'< 4 Hours',
-    hero_card3_lbl:'Certified',
-    hero_card3_val:'ISO 13485',
+    /* Hero */
+    hero_pill:    'ISO 13485 Certified Medical Equipment',
+    hero_title1:  'Advancing Patient Care',
+    hero_title2:  'Through Medical Technology',
+    hero_desc:    'RD Medcare provides certified medical equipment and healthcare technology solutions for hospitals, clinics, and healthcare organisations across Thailand.',
+    hero_cta1:    'Contact Specialist',
+    hero_cta2:    'Product Information',
+    hero_m1_num:  '500+', hero_m1_lbl: 'Hospitals Served',
+    hero_m2_num:  '10K+', hero_m2_lbl: 'Devices in Service',
+    hero_m3_num:  '15+',  hero_m3_lbl: 'Years Experience',
+    hero_c1_lbl:  'Certified Devices', hero_c1_val: 'ISO 13485',
+    hero_c2_lbl:  'Response Time',     hero_c2_val: '< 4 Hours',
+    hero_c3_lbl:  'Uptime Rate',       hero_c3_val: '98%',
 
-    /* ── Trusted Strip ── */
-    trusted_label: 'Trusted by Leading Healthcare Institutions',
+    /* Ticker */
+    ticker_label: 'Trusted by Leading Healthcare Institutions Across Thailand',
 
-    /* ── Products ── */
-    products_label:    'Our Products',
-    products_title:    'Medical Equipment Portfolio',
-    products_subtitle: 'Discover our comprehensive range of precision medical devices, engineered for reliability and clinical excellence.',
-    products_badge:    'Featured',
-    products_view:     'View All Products',
-    prod1_tag:  'Respiratory Care',
-    prod1_name: 'High Flow Humidifier',
-    prod1_desc: 'Advanced high-flow nasal cannula therapy with precise temperature and humidity control for optimal respiratory support.',
-    prod2_tag:  'Patient Monitoring',
-    prod2_name: 'SpO₂ Monitor',
-    prod2_desc: 'Continuous pulse oximetry monitoring with real-time alerts, waveform display and alarm management.',
-    prod3_tag:  'Critical Care',
-    prod3_name: 'Patient Monitor',
-    prod3_desc: 'Multi-parameter bedside monitor for comprehensive vital signs tracking in ICU and ward environments.',
-    prod4_tag:  'Cardiology',
-    prod4_name: 'ECG System',
-    prod4_desc: '12-lead diagnostic ECG with advanced analysis algorithms, wireless connectivity and EMR integration.',
-    prod5_tag:  'Surgical Tools',
-    prod5_name: 'Tourniquet System',
-    prod5_desc: 'Pneumatic tourniquet with dual-port capability, automatic calibration and comprehensive safety monitoring.',
-    prod6_tag:  'Ventilation',
-    prod6_name: 'Infusion Pump',
-    prod6_desc: 'Precision volumetric infusion with drug library, dose error reduction and wireless network connectivity.',
-    prod_learn: 'Learn More',
+    /* Solutions */
+    sol_eyebrow:'Medical Solutions',
+    sol_title:  'Comprehensive Healthcare Technology',
+    sol_lead:   'From patient monitoring to hospital infrastructure, we provide end-to-end medical equipment solutions for every care environment.',
+    sol1_title:'Patient Monitoring',      sol1_desc:'Multi-parameter monitors, SpO₂, NIBP, ECG bedside systems.',
+    sol2_title:'Respiratory Care',        sol2_desc:'High-flow humidifiers, ventilators, oxygen delivery systems.',
+    sol3_title:'Critical Care Equipment', sol3_desc:'ICU monitors, infusion pumps, defibrillators, life support.',
+    sol4_title:'Medical Consumables',     sol4_desc:'Disposables, consumables and accessories for all specialties.',
+    sol5_title:'Healthcare IT Solutions', sol5_desc:'EMR integration, central monitoring stations, data analytics.',
+    sol6_title:'Hospital Infrastructure', sol6_desc:'Medical gas systems, nurse call, OR and ICU setup.',
 
-    /* ── Why Choose ── */
-    why_label:    'Why RD Medcare',
-    why_title:    'Your Trusted Healthcare Partner',
-    why_subtitle: 'We combine clinical expertise with cutting-edge technology to deliver solutions that matter in critical moments.',
-    why1_title:   'ISO 13485 Certified',
-    why1_desc:    'All our products meet international medical device quality management standards for guaranteed safety and efficacy.',
-    why2_title:   'Local Support Network',
-    why2_desc:    'Dedicated service engineers across Thailand providing rapid on-site support and preventive maintenance.',
-    why3_title:   'Clinical Training',
-    why3_desc:    'Comprehensive in-service training programs ensuring healthcare teams maximize device performance.',
-    why4_title:   '24/7 Technical Support',
-    why4_desc:    'Round-the-clock technical assistance to ensure zero downtime for your critical medical equipment.',
-    why5_title:   'Genuine Spare Parts',
-    why5_desc:    'OEM-quality parts with full traceability, ensuring device longevity and regulatory compliance.',
-    why6_title:   'Regulatory Compliance',
-    why6_desc:    'Full compliance with FDA, CE, and Thai FDA requirements for complete peace of mind.',
+    /* Products */
+    prod_eyebrow:   'Featured Products',
+    prod_title:     'Medical Equipment Highlights',
+    prod_lead:      'Precision-engineered devices selected for clinical reliability and ease of use.',
+    prod_view_all:  'View All Products',
+    prod_learn:     'Learn More',
+    prod1_cat:'Respiratory Care',   prod1_name:'High Flow Humidifier',     prod1_desc:'Advanced HFNC therapy with precise temperature & FiO₂ control.',
+    prod1_f1:'Flow 2–60 L/min', prod1_f2:'FiO₂ 21–100%', prod1_f3:'Temp 31–37°C',
+    prod2_cat:'Patient Monitoring', prod2_name:'SpO₂ Monitor',             prod2_desc:'Continuous pulse oximetry with waveform display and smart alarms.',
+    prod2_f1:'±2% accuracy',    prod2_f2:'Waveform trend',  prod2_f3:'Configurable alarms',
+    prod3_cat:'Critical Care',      prod3_name:'Bedside Patient Monitor',  prod3_desc:'Multi-parameter ICU/ward monitor with central station connectivity.',
+    prod3_f1:'ECG, SpO₂, NIBP', prod3_f2:'EtCO₂ optional', prod3_f3:'Wireless network',
+    prod4_cat:'Cardiology',         prod4_name:'12-Lead ECG System',       prod4_desc:'Diagnostic ECG with auto-interpretation and EMR/HIS integration.',
+    prod4_f1:'Simultaneous 12L', prod4_f2:'Auto analysis',  prod4_f3:'EMR integration',
+    prod5_cat:'Surgical',           prod5_name:'Pneumatic Tourniquet',     prod5_desc:'Dual-port tourniquet with auto calibration and safety monitoring.',
+    prod5_f1:'50–500 mmHg',     prod5_f2:'Dual-limb',      prod5_f3:'Safety lock',
+    prod6_cat:'Infusion',           prod6_name:'Volumetric Infusion Pump', prod6_desc:'Precision infusion with drug library and dose error reduction.',
+    prod6_f1:'0.1–1200 mL/hr',  prod6_f2:'Drug library',   prod6_f3:'Wi-Fi enabled',
 
-    /* ── Stats ── */
-    stats_label:    'Impact by Numbers',
-    stats_title:    'Delivering Healthcare Excellence',
-    stats_subtitle: 'Our commitment to quality healthcare is reflected in the numbers that matter most.',
-    stat1_num:   '500+',
-    stat1_lbl:   'Partner Hospitals',
-    stat2_num:   '10K+',
-    stat2_lbl:   'Devices Installed',
-    stat3_num:   '15+',
-    stat3_lbl:   'Years of Excellence',
-    stat4_num:   '98%',
-    stat4_lbl:   'Uptime Guarantee',
+    /* Why Choose */
+    why_eyebrow:'Why RD Medcare',
+    why_title:  'Your Trusted Medical Equipment Partner',
+    why_lead:   'We combine clinical expertise, certified products, and nationwide support to ensure every healthcare facility has the tools to deliver exceptional patient care.',
+    why1_title:'Experienced Medical Team',         why1_desc:'Our team includes biomedical engineers and clinical specialists with deep healthcare industry knowledge.',
+    why2_title:'Certified Medical Equipment',      why2_desc:'All products carry ISO 13485, CE, FDA, and Thai FDA certifications for guaranteed safety and efficacy.',
+    why3_title:'Hospital & Clinic Support',        why3_desc:'Dedicated account managers and service teams for hospitals, clinics, and outpatient facilities nationwide.',
+    why4_title:'Maintenance & Calibration',        why4_desc:'Scheduled preventive maintenance and calibration services to ensure consistent device performance.',
+    why5_title:'Fast Technical Support',           why5_desc:'24/7 technical helpdesk and on-site response within 4 hours for critical equipment failures.',
 
-    /* ── Partners ── */
-    partners_label:    'Healthcare Partners',
-    partners_title:    'Trusted Across Thailand',
-    partners_subtitle: 'From university hospitals to private clinics, our solutions are trusted by healthcare leaders nationwide.',
+    /* Partners */
+    partners_eyebrow:'Healthcare Network',
+    partners_title:  'Trusted by Thailand\'s Leading Hospitals',
+    partners_lead:   'From university medical centres to private hospitals, our equipment is in service across Thailand\'s healthcare system.',
 
-    /* ── CTA ── */
-    cta_title:   'Ready to Elevate Patient Care?',
-    cta_desc:    'Talk to our medical equipment specialists and discover the right solutions for your healthcare facility.',
-    cta_btn1:    'Request a Demo',
-    cta_btn2:    'Contact Us',
+    /* Services */
+    svc_eyebrow:'Service & Support',
+    svc_title:  'Complete Lifecycle Support',
+    svc_lead:   'From installation to end-of-life, we provide comprehensive after-sales services ensuring maximum uptime for your medical equipment.',
+    svc1_title:'Installation Services',   svc1_desc:'Professional installation, commissioning and handover with full documentation.',
+    svc2_title:'Preventive Maintenance',  svc2_desc:'Scheduled PM programmes to maintain device accuracy and regulatory compliance.',
+    svc3_title:'Product Training',        svc3_desc:'On-site and remote clinical training for nursing and medical staff.',
+    svc4_title:'Technical Support',       svc4_desc:'24/7 helpline with rapid on-site response for critical equipment issues.',
+    svc5_title:'Warranty Services',       svc5_desc:'Comprehensive warranty coverage with genuine OEM parts and full traceability.',
 
-    /* ── Footer ── */
-    footer_desc:    'Advancing healthcare through precision medical equipment solutions. Your trusted partner in clinical excellence.',
-    footer_products:'Products',
-    footer_company: 'Company',
-    footer_support: 'Support',
-    footer_contact: 'Contact',
-    footer_copy:    '© 2024 RD Medcare. All rights reserved.',
-    footer_privacy: 'Privacy',
-    footer_terms:   'Terms',
+    /* Contact */
+    contact_eyebrow:  'Get in Touch',
+    contact_title:    'Speak with a Medical Specialist',
+    contact_lead:     'Tell us about your facility\'s needs and our team will recommend the most suitable solutions.',
+    form_title:       'Enquiry Form',
+    form_name:        'Full Name',
+    form_org:         'Hospital / Organisation',
+    form_phone:       'Phone Number',
+    form_email:       'Email Address',
+    form_interest:    'Product Interest',
+    form_msg:         'Message (optional)',
+    form_submit:      'Send Enquiry',
+    info_title:       'Contact Us',
+    info_desc:        'Our medical specialists respond within one business day.',
 
-    /* ── About Page ── */
-    about_hero_title:   'About RD Medcare',
-    about_hero_desc:    'A leading medical equipment distributor committed to advancing healthcare across Thailand.',
-    about_mission_lbl:  'Our Mission',
-    about_mission_title:'Advancing Healthcare Through Innovation',
-    about_mission_desc: 'RD Medcare was founded with a singular vision: to make world-class medical technology accessible to every healthcare provider in Thailand, regardless of size or location.',
-    about_vision_title: 'Our Vision',
-    about_vision_desc:  'To be the most trusted medical equipment partner in Southeast Asia, enabling better patient outcomes through reliable technology and exceptional service.',
-    about_team_lbl:     'Our Team',
-    about_team_title:   'Leadership Team',
-    about_history_lbl:  'Our Journey',
-    about_history_title:'Milestones & Achievements',
+    /* CTA Banner */
+    cta_title:'Ready to Improve Patient Outcomes?',
+    cta_desc: 'Connect with our specialist team to find the right medical equipment solutions for your facility.',
+    cta_btn1: 'Book a Demo',
+    cta_btn2: 'Download Catalogue',
 
-    /* ── Contact Page ── */
-    contact_hero_title: 'Get in Touch',
-    contact_hero_desc:  'Our team is ready to help you find the right medical equipment solutions.',
-    contact_form_title: 'Send Us a Message',
-    contact_form_name:  'Full Name',
-    contact_form_email: 'Email Address',
-    contact_form_phone: 'Phone Number',
-    contact_form_org:   'Organization / Hospital',
-    contact_form_product:'Product Interest',
-    contact_form_msg:   'Your Message',
-    contact_form_submit:'Send Message',
-    contact_info_title: 'Contact Information',
-    contact_info_desc:  'Reach out via any channel and our specialists will respond within one business day.',
+    /* Footer */
+    footer_tagline: 'Advancing healthcare through certified medical equipment and technology solutions. Trusted by hospitals across Thailand.',
+    ft_products:'Products', ft_company:'Company', ft_support:'Support', ft_contact:'Contact',
+    footer_copy:'© 2024 RD Medcare. All rights reserved.',
+    footer_privacy:'Privacy Policy', footer_terms:'Terms of Use',
 
-    /* ── Products Page Full ── */
-    products_page_title: 'Medical Products',
-    products_page_desc:  'Comprehensive range of precision medical devices for modern healthcare facilities.',
-    filter_all:          'All Products',
-    filter_monitoring:   'Patient Monitoring',
-    filter_respiratory:  'Respiratory Care',
-    filter_cardiology:   'Cardiology',
-    filter_surgical:     'Surgical',
-    filter_infusion:     'Infusion',
+    /* About */
+    ab_hero_title:'About RD Medcare',
+    ab_hero_desc: 'A trusted medical equipment distributor committed to improving healthcare outcomes across Thailand.',
+    ab_mission_ey:'Our Mission',
+    ab_mission_h: 'Improving Healthcare Through Technology',
+    ab_mission_p: 'RD Medcare was founded to bridge the gap between world-class medical technology and healthcare providers across Thailand — making certified, reliable equipment accessible to every hospital and clinic, regardless of location or size.',
+    ab_vision_h:  'Our Vision',
+    ab_vision_p:  'To be the most trusted medical equipment partner in Southeast Asia, enabling better patient outcomes through reliable technology, expert support, and unwavering commitment to quality.',
+    ab_team_ey:   'Leadership',
+    ab_team_h:    'Our Medical Team',
+    ab_hist_ey:   'Company History',
+    ab_hist_h:    'Milestones & Achievements',
+    ab_cert_ey:   'Certifications',
+    ab_cert_h:    'Quality & Compliance',
 
-    /* ── Solutions Page ── */
-    solutions_hero_title: 'Healthcare Solutions',
-    solutions_hero_desc:  'Integrated medical technology solutions tailored for every care setting.',
-    sol1_tag:   'ICU & Critical Care',
-    sol1_title: 'Intensive Care Unit Solutions',
-    sol1_desc:  'Complete ICU monitoring and life support systems designed for the most critical patients. From ventilators to hemodynamic monitoring, we equip your team with the tools they need.',
-    sol2_tag:   'Cardiology',
-    sol2_title: 'Cardiac Monitoring & Diagnostics',
-    sol2_desc:  'Advanced cardiac care systems including 12-lead ECG, holter monitoring and stress testing solutions for comprehensive cardiovascular diagnostics.',
-    sol3_tag:   'Operating Room',
-    sol3_title: 'Surgical & Perioperative Care',
-    sol3_desc:  'Integrated operating room solutions combining patient monitoring, infusion management and surgical safety systems for optimal surgical outcomes.',
-    sol4_tag:   'General Ward',
-    sol4_title: 'Ward & Outpatient Monitoring',
-    sol4_desc:  'Scalable monitoring solutions for general wards and outpatient departments, with central monitoring stations and wireless connectivity.',
+    /* Products page */
+    pp_title: 'Medical Products',
+    pp_desc:  'Precision medical devices for modern healthcare facilities.',
+    filt_all: 'All', filt_mon:'Monitoring', filt_resp:'Respiratory',
+    filt_card:'Cardiology', filt_surg:'Surgical', filt_inf:'Infusion',
+
+    /* Solutions page */
+    sp_title:'Healthcare Solutions',
+    sp_desc: 'Integrated solutions for every clinical environment.',
   },
 
   th: {
-    /* ── Navigation ── */
-    nav_home:      'หน้าหลัก',
-    nav_products:  'ผลิตภัณฑ์',
-    nav_solutions: 'โซลูชัน',
-    nav_about:     'เกี่ยวกับเรา',
-    nav_contact:   'ติดต่อ',
-    nav_cta:       'ขอใบเสนอราคา',
+    /* Nav */
+    nav_home:'หน้าหลัก', nav_products:'ผลิตภัณฑ์', nav_solutions:'โซลูชัน',
+    nav_about:'เกี่ยวกับเรา', nav_contact:'ติดต่อ', nav_cta:'ปรึกษาผู้เชี่ยวชาญ',
 
-    /* ── Hero ── */
-    hero_badge:    'อุปกรณ์การแพทย์ได้รับมาตรฐาน ISO 13485',
-    hero_title1:   'เทคโนโลยีการแพทย์',
-    hero_title2:   'ที่คุณไว้วางใจได้',
-    hero_desc:     'RD Medcare นำเสนอเทคโนโลยีการดูแลสุขภาพที่แม่นยำ ได้รับความไว้วางใจจากโรงพยาบาลและคลินิกทั่วประเทศไทย เพื่อยกระดับการดูแลผู้ป่วย',
-    hero_cta1:     'ดูผลิตภัณฑ์',
-    hero_cta2:     'เรียนรู้เพิ่มเติม',
-    hero_stat1_num:'500+',
-    hero_stat1_lbl:'โรงพยาบาลที่ให้บริการ',
-    hero_stat2_num:'15+',
-    hero_stat2_lbl:'ปีแห่งประสบการณ์',
-    hero_stat3_num:'98%',
-    hero_stat3_lbl:'ความพึงพอใจของลูกค้า',
-    hero_card1_lbl:'อุปกรณ์ที่ใช้งานอยู่',
-    hero_card1_val:'10,000+',
-    hero_card2_lbl:'เวลาตอบสนอง',
-    hero_card2_val:'< 4 ชั่วโมง',
-    hero_card3_lbl:'ได้รับการรับรอง',
-    hero_card3_val:'ISO 13485',
+    /* Hero */
+    hero_pill:    'อุปกรณ์การแพทย์รับรองมาตรฐาน ISO 13485',
+    hero_title1:  'ยกระดับการดูแลผู้ป่วย',
+    hero_title2:  'ด้วยเทคโนโลยีการแพทย์',
+    hero_desc:    'RD Medcare จัดจำหน่ายอุปกรณ์การแพทย์ที่ได้รับการรับรองและโซลูชันเทคโนโลยีด้านสุขภาพสำหรับโรงพยาบาล คลินิก และสถานพยาบาลทั่วประเทศไทย',
+    hero_cta1:    'ปรึกษาผู้เชี่ยวชาญ',
+    hero_cta2:    'ข้อมูลผลิตภัณฑ์',
+    hero_m1_num:  '500+', hero_m1_lbl: 'โรงพยาบาลที่ให้บริการ',
+    hero_m2_num:  '1 หมื่น+', hero_m2_lbl: 'อุปกรณ์ในการใช้งาน',
+    hero_m3_num:  '15+',  hero_m3_lbl: 'ปีแห่งประสบการณ์',
+    hero_c1_lbl:  'อุปกรณ์ที่ได้รับการรับรอง', hero_c1_val: 'ISO 13485',
+    hero_c2_lbl:  'เวลาตอบสนอง',              hero_c2_val: '< 4 ชั่วโมง',
+    hero_c3_lbl:  'อัตราการทำงาน',            hero_c3_val: '98%',
 
-    /* ── Trusted Strip ── */
-    trusted_label: 'ได้รับความไว้วางใจจากสถาบันการแพทย์ชั้นนำ',
+    /* Ticker */
+    ticker_label: 'ได้รับความไว้วางใจจากสถาบันสุขภาพชั้นนำทั่วประเทศไทย',
 
-    /* ── Products ── */
-    products_label:    'ผลิตภัณฑ์ของเรา',
-    products_title:    'พอร์ตโฟลิโอเครื่องมือแพทย์',
-    products_subtitle: 'ค้นพบอุปกรณ์การแพทย์ที่แม่นยำครบวงจรของเรา ออกแบบมาเพื่อความน่าเชื่อถือและความเป็นเลิศทางคลินิก',
-    products_badge:    'แนะนำ',
-    products_view:     'ดูผลิตภัณฑ์ทั้งหมด',
-    prod1_tag:  'การดูแลระบบทางเดินหายใจ',
-    prod1_name: 'เครื่องให้ความชื้นแบบ High Flow',
-    prod1_desc: 'การบำบัดด้วยออกซิเจนแบบ High Flow ผ่านสายสวนจมูก พร้อมควบคุมอุณหภูมิและความชื้นอย่างแม่นยำ',
-    prod2_tag:  'ติดตามผู้ป่วย',
-    prod2_name: 'เครื่องวัด SpO₂',
-    prod2_desc: 'การตรวจวัดออกซิเจนในเลือดแบบต่อเนื่องพร้อมการแจ้งเตือนแบบเรียลไทม์และการจัดการสัญญาณเตือน',
-    prod3_tag:  'การดูแลผู้ป่วยวิกฤต',
-    prod3_name: 'Patient Monitor',
-    prod3_desc: 'เครื่องติดตามสัญญาณชีพหลายพารามิเตอร์สำหรับ ICU และหอผู้ป่วยทั่วไป',
-    prod4_tag:  'อายุรกรรมหัวใจ',
-    prod4_name: 'ระบบ ECG',
-    prod4_desc: 'การตรวจ ECG แบบ 12 ลีดพร้อมอัลกอริทึมวิเคราะห์ขั้นสูง การเชื่อมต่อไร้สาย และการรวมระบบ EMR',
-    prod5_tag:  'เครื่องมือผ่าตัด',
-    prod5_name: 'ระบบ Tourniquet',
-    prod5_desc: 'Tourniquet แบบนิวเมติกพร้อมระบบ Dual-port การสอบเทียบอัตโนมัติ และการตรวจสอบความปลอดภัย',
-    prod6_tag:  'การให้น้ำเกลือ',
-    prod6_name: 'ปั๊มน้ำเกลือ',
-    prod6_desc: 'การให้น้ำเกลือที่แม่นยำพร้อมคลังยา การลดข้อผิดพลาดในการให้ยา และการเชื่อมต่อเครือข่ายไร้สาย',
-    prod_learn: 'เรียนรู้เพิ่มเติม',
+    /* Solutions */
+    sol_eyebrow:'โซลูชันทางการแพทย์',
+    sol_title:  'เทคโนโลยีด้านสุขภาพที่ครอบคลุม',
+    sol_lead:   'ตั้งแต่การติดตามผู้ป่วยไปจนถึงโครงสร้างพื้นฐานโรงพยาบาล เราให้บริการโซลูชันอุปกรณ์การแพทย์ครบวงจร',
+    sol1_title:'ติดตามผู้ป่วย',             sol1_desc:'เครื่องติดตามหลายพารามิเตอร์ SpO₂ NIBP ระบบ ECG ข้างเตียง',
+    sol2_title:'การดูแลระบบหายใจ',          sol2_desc:'เครื่องให้ความชื้น High-flow เครื่องช่วยหายใจ ระบบจ่ายออกซิเจน',
+    sol3_title:'อุปกรณ์ผู้ป่วยวิกฤต',       sol3_desc:'จอ ICU ปั๊มน้ำเกลือ เครื่องช็อตไฟฟ้าหัวใจ ระบบช่วยชีวิต',
+    sol4_title:'วัสดุสิ้นเปลือง',           sol4_desc:'สิ่งสิ้นเปลือง วัสดุใช้แล้วทิ้ง และอุปกรณ์เสริมสำหรับทุกสาขา',
+    sol5_title:'โซลูชัน IT สุขภาพ',         sol5_desc:'การรวม EMR สถานีติดตามส่วนกลาง การวิเคราะห์ข้อมูลทางการแพทย์',
+    sol6_title:'โครงสร้างพื้นฐานโรงพยาบาล', sol6_desc:'ระบบก๊าซทางการแพทย์ ระบบ Nurse call การติดตั้ง OR และ ICU',
 
-    /* ── Why Choose ── */
-    why_label:    'ทำไมต้อง RD Medcare',
-    why_title:    'พันธมิตรด้านสุขภาพที่คุณไว้วางใจ',
-    why_subtitle: 'เราผสมผสานความเชี่ยวชาญทางคลินิกเข้ากับเทคโนโลยีล้ำสมัยเพื่อนำเสนอโซลูชันที่สำคัญในยามวิกฤต',
-    why1_title:   'ได้รับการรับรอง ISO 13485',
-    why1_desc:    'ผลิตภัณฑ์ทั้งหมดของเราผ่านมาตรฐานการจัดการคุณภาพอุปกรณ์การแพทย์ระดับสากล',
-    why2_title:   'เครือข่ายสนับสนุนในพื้นที่',
-    why2_desc:    'วิศวกรบริการเฉพาะทางทั่วประเทศไทย พร้อมให้บริการ On-site อย่างรวดเร็ว',
-    why3_title:   'การฝึกอบรมทางคลินิก',
-    why3_desc:    'โปรแกรมฝึกอบรมครอบคลุมเพื่อให้ทีมแพทย์ใช้อุปกรณ์ได้อย่างเต็มประสิทธิภาพ',
-    why4_title:   'ฝ่ายเทคนิค 24/7',
-    why4_desc:    'ความช่วยเหลือด้านเทคนิคตลอด 24 ชั่วโมง เพื่อให้อุปกรณ์การแพทย์วิกฤตของคุณไม่หยุดทำงาน',
-    why5_title:   'อะไหล่แท้',
-    why5_desc:    'อะไหล่คุณภาพ OEM พร้อมการตรวจสอบย้อนกลับเต็มรูปแบบ เพื่อรับรองอายุการใช้งานและการปฏิบัติตามกฎระเบียบ',
-    why6_title:   'ปฏิบัติตามกฎระเบียบ',
-    why6_desc:    'ปฏิบัติตาม FDA, CE และ อย. ไทย อย่างครบถ้วน เพื่อความมั่นใจอย่างสมบูรณ์',
+    /* Products */
+    prod_eyebrow:  'ผลิตภัณฑ์แนะนำ',
+    prod_title:    'อุปกรณ์การแพทย์ที่โดดเด่น',
+    prod_lead:     'อุปกรณ์ที่ออกแบบมาอย่างแม่นยำ คัดเลือกจากความน่าเชื่อถือทางคลินิกและความสะดวกในการใช้งาน',
+    prod_view_all: 'ดูผลิตภัณฑ์ทั้งหมด',
+    prod_learn:    'ดูเพิ่มเติม',
+    prod1_cat:'การดูแลระบบหายใจ', prod1_name:'เครื่องให้ความชื้น High Flow',         prod1_desc:'การบำบัดด้วย HFNC ขั้นสูงพร้อมควบคุมอุณหภูมิและ FiO₂ อย่างแม่นยำ',
+    prod1_f1:'Flow 2–60 L/min', prod1_f2:'FiO₂ 21–100%', prod1_f3:'Temp 31–37°C',
+    prod2_cat:'ติดตามผู้ป่วย',    prod2_name:'เครื่องวัด SpO₂',                      prod2_desc:'การวัดออกซิเจนในเลือดแบบต่อเนื่องพร้อมแสดงคลื่นและสัญญาณเตือนอัจฉริยะ',
+    prod2_f1:'ความแม่นยำ ±2%', prod2_f2:'แสดงคลื่น', prod2_f3:'สัญญาณเตือนตั้งค่าได้',
+    prod3_cat:'การดูแลวิกฤต',    prod3_name:'Patient Monitor ข้างเตียง',             prod3_desc:'เครื่องติดตาม ICU/หอผู้ป่วยหลายพารามิเตอร์พร้อมเชื่อมต่อสถานีส่วนกลาง',
+    prod3_f1:'ECG, SpO₂, NIBP', prod3_f2:'EtCO₂ เพิ่มเติม', prod3_f3:'เครือข่ายไร้สาย',
+    prod4_cat:'อายุรกรรมหัวใจ',  prod4_name:'ระบบ ECG 12 ลีด',                      prod4_desc:'ECG วินิจฉัยพร้อมการวิเคราะห์อัตโนมัติและรวมระบบ EMR/HIS',
+    prod4_f1:'12 ลีดพร้อมกัน',  prod4_f2:'วิเคราะห์อัตโนมัติ', prod4_f3:'รวม EMR',
+    prod5_cat:'ผ่าตัด',          prod5_name:'Tourniquet ระบบนิวเมติก',               prod5_desc:'Tourniquet Dual-port พร้อมสอบเทียบอัตโนมัติและตรวจสอบความปลอดภัย',
+    prod5_f1:'50–500 mmHg',    prod5_f2:'Dual-limb',           prod5_f3:'ระบบล็อคปลอดภัย',
+    prod6_cat:'การให้น้ำเกลือ',  prod6_name:'ปั๊มน้ำเกลือแบบ Volumetric',            prod6_desc:'การให้น้ำเกลือที่แม่นยำพร้อมคลังยาและระบบลดข้อผิดพลาด',
+    prod6_f1:'0.1–1200 mL/hr',  prod6_f2:'คลังยา',             prod6_f3:'Wi-Fi',
 
-    /* ── Stats ── */
-    stats_label:    'ผลลัพธ์ที่เป็นตัวเลข',
-    stats_title:    'ส่งมอบความเป็นเลิศด้านสุขภาพ',
-    stats_subtitle: 'ความมุ่งมั่นของเราต่อการดูแลสุขภาพที่มีคุณภาพสะท้อนออกมาในตัวเลขที่สำคัญที่สุด',
-    stat1_num:   '500+',
-    stat1_lbl:   'โรงพยาบาลพันธมิตร',
-    stat2_num:   '1 หมื่น+',
-    stat2_lbl:   'อุปกรณ์ที่ติดตั้ง',
-    stat3_num:   '15+',
-    stat3_lbl:   'ปีแห่งความเป็นเลิศ',
-    stat4_num:   '98%',
-    stat4_lbl:   'รับประกันการใช้งาน',
+    /* Why Choose */
+    why_eyebrow:'ทำไมต้อง RD Medcare',
+    why_title:  'พันธมิตรอุปกรณ์การแพทย์ที่คุณไว้วางใจ',
+    why_lead:   'เราผสมผสานความเชี่ยวชาญทางคลินิก ผลิตภัณฑ์ที่ได้รับการรับรอง และการสนับสนุนทั่วประเทศ เพื่อให้สถานพยาบาลทุกแห่งมีเครื่องมือสำหรับการดูแลผู้ป่วยอย่างยอดเยี่ยม',
+    why1_title:'ทีมแพทย์ผู้มีประสบการณ์',          why1_desc:'ทีมของเรามีวิศวกรชีวการแพทย์และผู้เชี่ยวชาญทางคลินิกที่มีความรู้ลึกด้านอุตสาหกรรมการดูแลสุขภาพ',
+    why2_title:'อุปกรณ์การแพทย์ที่ได้รับการรับรอง', why2_desc:'ผลิตภัณฑ์ทุกชิ้นมี ISO 13485, CE, FDA และ อย. ไทย เพื่อรับประกันความปลอดภัยและประสิทธิผล',
+    why3_title:'การสนับสนุนโรงพยาบาลและคลินิก',    why3_desc:'ผู้จัดการบัญชีและทีมบริการเฉพาะสำหรับโรงพยาบาล คลินิก และสถานพยาบาลผู้ป่วยนอกทั่วประเทศ',
+    why4_title:'การบำรุงรักษาและสอบเทียบ',          why4_desc:'บริการ PM และสอบเทียบตามกำหนดการเพื่อให้มั่นใจในประสิทธิภาพของอุปกรณ์อย่างสม่ำเสมอ',
+    why5_title:'ฝ่ายเทคนิคตอบสนองรวดเร็ว',         why5_desc:'ศูนย์ช่วยเหลือ 24/7 และตอบสนอง On-site ภายใน 4 ชั่วโมงสำหรับอุปกรณ์วิกฤต',
 
-    /* ── Partners ── */
-    partners_label:    'พันธมิตรด้านสุขภาพ',
-    partners_title:    'ได้รับความไว้วางใจทั่วประเทศไทย',
-    partners_subtitle: 'ตั้งแต่โรงพยาบาลมหาวิทยาลัยไปจนถึงคลินิกเอกชน โซลูชันของเราได้รับความไว้วางใจจากผู้นำด้านสุขภาพทั่วประเทศ',
+    /* Partners */
+    partners_eyebrow:'เครือข่ายสุขภาพ',
+    partners_title:  'ได้รับความไว้วางใจจากโรงพยาบาลชั้นนำของไทย',
+    partners_lead:   'ตั้งแต่ศูนย์การแพทย์มหาวิทยาลัยไปจนถึงโรงพยาบาลเอกชน อุปกรณ์ของเราให้บริการทั่วระบบสาธารณสุขไทย',
 
-    /* ── CTA ── */
-    cta_title:   'พร้อมยกระดับการดูแลผู้ป่วย?',
-    cta_desc:    'พูดคุยกับผู้เชี่ยวชาญด้านอุปกรณ์การแพทย์ของเรา และค้นหาโซลูชันที่เหมาะสมสำหรับสถานพยาบาลของคุณ',
-    cta_btn1:    'ขอดูการสาธิต',
-    cta_btn2:    'ติดต่อเรา',
+    /* Services */
+    svc_eyebrow:'การบริการและสนับสนุน',
+    svc_title:  'การสนับสนุนตลอดวงจรอุปกรณ์',
+    svc_lead:   'ตั้งแต่การติดตั้งจนถึงสิ้นอายุการใช้งาน เราให้บริการหลังการขายครบวงจรเพื่อให้อุปกรณ์ทางการแพทย์ทำงานได้สูงสุด',
+    svc1_title:'บริการติดตั้ง',      svc1_desc:'การติดตั้งและส่งมอบแบบมืออาชีพพร้อมเอกสารครบถ้วน',
+    svc2_title:'การบำรุงรักษาเชิงป้องกัน', svc2_desc:'โปรแกรม PM ตามกำหนดเพื่อรักษาความแม่นยำและการปฏิบัติตามกฎระเบียบ',
+    svc3_title:'การฝึกอบรมผลิตภัณฑ์', svc3_desc:'การฝึกอบรมทางคลินิก On-site และทางไกลสำหรับเจ้าหน้าที่การพยาบาลและแพทย์',
+    svc4_title:'ฝ่ายเทคนิค',         svc4_desc:'สายด่วน 24/7 พร้อมตอบสนองรวดเร็ว On-site สำหรับปัญหาอุปกรณ์วิกฤต',
+    svc5_title:'บริการรับประกัน',    svc5_desc:'การรับประกันครอบคลุมพร้อมอะไหล่ OEM แท้และการตรวจสอบย้อนกลับ',
 
-    /* ── Footer ── */
-    footer_desc:    'พัฒนาการดูแลสุขภาพผ่านโซลูชันเครื่องมือแพทย์ที่แม่นยำ พันธมิตรที่คุณไว้วางใจในความเป็นเลิศทางคลินิก',
-    footer_products:'ผลิตภัณฑ์',
-    footer_company: 'บริษัท',
-    footer_support: 'สนับสนุน',
-    footer_contact: 'ติดต่อ',
-    footer_copy:    '© 2024 RD Medcare สงวนลิขสิทธิ์',
-    footer_privacy: 'นโยบายความเป็นส่วนตัว',
-    footer_terms:   'ข้อกำหนดการใช้งาน',
+    /* Contact */
+    contact_eyebrow:  'ติดต่อเรา',
+    contact_title:    'พูดคุยกับผู้เชี่ยวชาญทางการแพทย์',
+    contact_lead:     'บอกเราเกี่ยวกับความต้องการของสถานพยาบาลคุณ และทีมของเราจะแนะนำโซลูชันที่เหมาะสมที่สุด',
+    form_title:       'แบบฟอร์มสอบถาม',
+    form_name:        'ชื่อ-นามสกุล',
+    form_org:         'โรงพยาบาล / องค์กร',
+    form_phone:       'หมายเลขโทรศัพท์',
+    form_email:       'อีเมล',
+    form_interest:    'ผลิตภัณฑ์ที่สนใจ',
+    form_msg:         'ข้อความ (ไม่บังคับ)',
+    form_submit:      'ส่งข้อความ',
+    info_title:       'ข้อมูลติดต่อ',
+    info_desc:        'ผู้เชี่ยวชาญของเราตอบกลับภายใน 1 วันทำการ',
 
-    /* ── About Page ── */
-    about_hero_title:   'เกี่ยวกับ RD Medcare',
-    about_hero_desc:    'ผู้จัดจำหน่ายอุปกรณ์การแพทย์ชั้นนำที่มุ่งมั่นพัฒนาการดูแลสุขภาพทั่วประเทศไทย',
-    about_mission_lbl:  'พันธกิจของเรา',
-    about_mission_title:'พัฒนาการดูแลสุขภาพผ่านนวัตกรรม',
-    about_mission_desc: 'RD Medcare ก่อตั้งขึ้นด้วยวิสัยทัศน์เดียว: ทำให้เทคโนโลยีการแพทย์ระดับโลกเข้าถึงได้สำหรับผู้ให้บริการด้านสุขภาพทุกรายในไทย ไม่ว่าจะมีขนาดใดหรืออยู่ที่ใด',
-    about_vision_title: 'วิสัยทัศน์ของเรา',
-    about_vision_desc:  'เป็นพันธมิตรด้านอุปกรณ์การแพทย์ที่น่าเชื่อถือที่สุดในเอเชียตะวันออกเฉียงใต้ เพื่อผลลัพธ์ที่ดีขึ้นสำหรับผู้ป่วยผ่านเทคโนโลยีที่เชื่อถือได้',
-    about_team_lbl:     'ทีมของเรา',
-    about_team_title:   'ทีมผู้นำ',
-    about_history_lbl:  'เส้นทางของเรา',
-    about_history_title:'เหตุการณ์สำคัญและความสำเร็จ',
+    /* CTA */
+    cta_title:'พร้อมปรับปรุงผลลัพธ์ผู้ป่วย?',
+    cta_desc: 'เชื่อมต่อกับทีมผู้เชี่ยวชาญของเราเพื่อหาโซลูชันอุปกรณ์การแพทย์ที่เหมาะสมสำหรับสถานพยาบาลของคุณ',
+    cta_btn1: 'นัดสาธิต',
+    cta_btn2: 'ดาวน์โหลดแคตตาล็อก',
 
-    /* ── Contact Page ── */
-    contact_hero_title: 'ติดต่อเรา',
-    contact_hero_desc:  'ทีมของเราพร้อมช่วยคุณค้นหาโซลูชันอุปกรณ์การแพทย์ที่เหมาะสม',
-    contact_form_title: 'ส่งข้อความถึงเรา',
-    contact_form_name:  'ชื่อ-นามสกุล',
-    contact_form_email: 'อีเมล',
-    contact_form_phone: 'เบอร์โทรศัพท์',
-    contact_form_org:   'องค์กร / โรงพยาบาล',
-    contact_form_product:'ผลิตภัณฑ์ที่สนใจ',
-    contact_form_msg:   'ข้อความของคุณ',
-    contact_form_submit:'ส่งข้อความ',
-    contact_info_title: 'ข้อมูลการติดต่อ',
-    contact_info_desc:  'ติดต่อผ่านช่องทางใดก็ได้ ผู้เชี่ยวชาญของเราจะตอบกลับภายใน 1 วันทำการ',
+    /* Footer */
+    footer_tagline: 'พัฒนาการดูแลสุขภาพผ่านอุปกรณ์การแพทย์ที่ได้รับการรับรองและโซลูชันเทคโนโลยี ได้รับความไว้วางใจจากโรงพยาบาลทั่วไทย',
+    ft_products:'ผลิตภัณฑ์', ft_company:'บริษัท', ft_support:'บริการ', ft_contact:'ติดต่อ',
+    footer_copy:'© 2024 RD Medcare สงวนลิขสิทธิ์',
+    footer_privacy:'นโยบายความเป็นส่วนตัว', footer_terms:'ข้อกำหนดการใช้งาน',
 
-    /* ── Products Page Full ── */
-    products_page_title: 'ผลิตภัณฑ์การแพทย์',
-    products_page_desc:  'อุปกรณ์การแพทย์ที่แม่นยำครบวงจรสำหรับสถานพยาบาลยุคใหม่',
-    filter_all:          'ทั้งหมด',
-    filter_monitoring:   'ติดตามผู้ป่วย',
-    filter_respiratory:  'ระบบทางเดินหายใจ',
-    filter_cardiology:   'อายุรกรรมหัวใจ',
-    filter_surgical:     'ผ่าตัด',
-    filter_infusion:     'การให้น้ำเกลือ',
+    /* About */
+    ab_hero_title:'เกี่ยวกับ RD Medcare',
+    ab_hero_desc: 'ผู้จัดจำหน่ายอุปกรณ์การแพทย์ที่เชื่อถือได้ มุ่งมั่นพัฒนาผลลัพธ์ด้านสุขภาพทั่วประเทศไทย',
+    ab_mission_ey:'พันธกิจ',
+    ab_mission_h: 'ปรับปรุงการดูแลสุขภาพผ่านเทคโนโลยี',
+    ab_mission_p: 'RD Medcare ก่อตั้งขึ้นเพื่อเชื่อมช่องว่างระหว่างเทคโนโลยีการแพทย์ระดับโลกกับผู้ให้บริการสุขภาพทั่วไทย — ทำให้อุปกรณ์ที่เชื่อถือได้เข้าถึงได้ในทุกโรงพยาบาลและคลินิก',
+    ab_vision_h:  'วิสัยทัศน์',
+    ab_vision_p:  'เป็นพันธมิตรอุปกรณ์การแพทย์ที่น่าเชื่อถือที่สุดในเอเชียตะวันออกเฉียงใต้ เพื่อผลลัพธ์ผู้ป่วยที่ดีขึ้นผ่านเทคโนโลยีที่เชื่อถือได้',
+    ab_team_ey:   'ทีมผู้บริหาร',
+    ab_team_h:    'ทีมผู้เชี่ยวชาญทางการแพทย์',
+    ab_hist_ey:   'ประวัติบริษัท',
+    ab_hist_h:    'เหตุการณ์สำคัญและความสำเร็จ',
+    ab_cert_ey:   'การรับรอง',
+    ab_cert_h:    'คุณภาพและการปฏิบัติตามมาตรฐาน',
 
-    /* ── Solutions Page ── */
-    solutions_hero_title: 'โซลูชันด้านสุขภาพ',
-    solutions_hero_desc:  'โซลูชันเทคโนโลยีการแพทย์แบบบูรณาการสำหรับทุกสภาพแวดล้อมการดูแล',
-    sol1_tag:   'ICU และการดูแลวิกฤต',
-    sol1_title: 'โซลูชัน ICU',
-    sol1_desc:  'ระบบติดตามและช่วยชีวิตใน ICU ที่ครบวงจร ออกแบบมาสำหรับผู้ป่วยวิกฤตที่สุด ตั้งแต่เครื่องช่วยหายใจไปจนถึงการติดตามฮีโมไดนามิก',
-    sol2_tag:   'อายุรกรรมหัวใจ',
-    sol2_title: 'การติดตามและวินิจฉัยหัวใจ',
-    sol2_desc:  'ระบบดูแลหัวใจขั้นสูง ได้แก่ ECG 12 ลีด Holter monitoring และการทดสอบความเครียด สำหรับการวินิจฉัยโรคหัวใจและหลอดเลือดที่ครอบคลุม',
-    sol3_tag:   'ห้องผ่าตัด',
-    sol3_title: 'การดูแลผ่าตัดและช่วงปริผ่าตัด',
-    sol3_desc:  'โซลูชันห้องผ่าตัดแบบบูรณาการที่รวมการติดตามผู้ป่วย การจัดการการให้น้ำเกลือ และระบบความปลอดภัยในการผ่าตัด',
-    sol4_tag:   'หอผู้ป่วยทั่วไป',
-    sol4_title: 'การติดตามหอผู้ป่วยและผู้ป่วยนอก',
-    sol4_desc:  'โซลูชันการติดตามที่ปรับขนาดได้สำหรับหอผู้ป่วยทั่วไปและผู้ป่วยนอก พร้อมสถานีติดตามส่วนกลางและการเชื่อมต่อไร้สาย',
+    /* Products page */
+    pp_title:'ผลิตภัณฑ์การแพทย์',
+    pp_desc: 'อุปกรณ์การแพทย์ที่แม่นยำสำหรับสถานพยาบาลยุคใหม่',
+    filt_all:'ทั้งหมด', filt_mon:'ติดตามผู้ป่วย', filt_resp:'ระบบหายใจ',
+    filt_card:'หัวใจ', filt_surg:'ผ่าตัด', filt_inf:'น้ำเกลือ',
+
+    /* Solutions page */
+    sp_title:'โซลูชันด้านสุขภาพ',
+    sp_desc: 'โซลูชันแบบบูรณาการสำหรับทุกสภาพแวดล้อมทางคลินิก',
   }
 };
 
-let currentLang = localStorage.getItem('rdmedcare_lang') || 'th';
+let currentLang = localStorage.getItem('rdm_lang') || 'th';
 
 function t(key) {
-  return (translations[currentLang] && translations[currentLang][key])
-    ? translations[currentLang][key]
-    : (translations['en'][key] || key);
+  return (translations[currentLang]?.[key]) ?? (translations.en[key] ?? key);
 }
 
 function applyTranslations() {
   document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
+    const key  = el.getAttribute('data-i18n');
     const attr = el.getAttribute('data-i18n-attr');
-    const val = t(key);
-    if (attr) {
-      el.setAttribute(attr, val);
-    } else {
-      el.textContent = val;
-    }
-  });
-  document.querySelectorAll('[data-i18n-html]').forEach(el => {
-    el.innerHTML = t(el.getAttribute('data-i18n-html'));
+    attr ? el.setAttribute(attr, t(key)) : (el.textContent = t(key));
   });
   document.documentElement.lang = currentLang === 'th' ? 'th' : 'en';
 }
 
 function switchLang(lang) {
   currentLang = lang;
-  localStorage.setItem('rdmedcare_lang', lang);
+  localStorage.setItem('rdm_lang', lang);
   applyTranslations();
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
-  });
+  document.querySelectorAll('.lang-btn').forEach(b =>
+    b.classList.toggle('active', b.dataset.lang === lang)
+  );
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   applyTranslations();
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.getAttribute('data-lang') === currentLang);
-    btn.addEventListener('click', () => switchLang(btn.getAttribute('data-lang')));
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === currentLang);
+    b.addEventListener('click', () => switchLang(b.dataset.lang));
   });
 });

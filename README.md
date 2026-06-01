@@ -1,53 +1,104 @@
-# RD Medcare – New Website
+# RD Medcare — New Website
 
-Premium healthcare website built with HTML/CSS/JavaScript, designed for Netlify deployment.
+**Live:** https://rdmedcare-new.netlify.app  
+**Stack:** HTML5 / CSS3 / Vanilla JS — no framework, no build step  
+**Deploy:** Push to `main` → GitHub Actions → Netlify (auto, ~30s)
 
-## Tech Stack
-- Pure HTML5 / CSS3 / Vanilla JS (no framework, no build step)
-- Google Fonts: Inter + Noto Sans Thai
-- Bilingual: Thai (default) / English
-- Responsive: mobile-first, tested 320px → 1440px
+---
 
 ## Pages
-| File | Route |
-|------|-------|
-| `index.html` | Home |
-| `products.html` | Products |
-| `solutions.html` | Solutions |
-| `about.html` | About |
-| `contact.html` | Contact |
 
-## Assets
+| File | URL | Status |
+|---|---|---|
+| `index.html` | `/` | ✅ Complete |
+| `products.html` | `/products` | ✅ Complete |
+| `solutions.html` | `/solutions` | ✅ Complete |
+| `about.html` | `/about` | ✅ Complete |
+| `contact.html` | `/contact` | ✅ Complete |
+| `404.html` | *(fallback)* | ✅ Complete |
+
+---
+
+## File Structure
+
 ```
-assets/
-  css/styles.css   – full design system
-  js/lang.js       – bilingual translation engine
-  js/main.js       – interactions, scroll, filter, form
-  images/          – place all images here (see REPLACE comments)
+rdmedcare-netlify/
+├── index.html
+├── products.html
+├── solutions.html
+├── about.html
+├── contact.html
+├── 404.html
+├── netlify.toml          ← headers, cache rules, redirects
+├── robots.txt
+├── sitemap.xml
+├── CLAUDE.md             ← AI session context (read first)
+├── PROJECT_CONTEXT.md    ← full project background
+├── TODO.md               ← pending tasks
+├── CHANGELOG.md          ← version history
+└── assets/
+    ├── css/styles.css    ← design system (all tokens in :root)
+    ├── js/lang.js        ← TH/EN translation engine
+    ├── js/main.js        ← navbar, scroll, animations, form
+    └── images/products/  ← real product photos
 ```
 
-## Before Going Live – Replace Placeholders
+---
 
-Search the HTML files for `REPLACE` comments to find every placeholder:
+## Color Theme — Earth Tone Luxury
 
-- **Product images** – `assets/images/products/*.jpg`
-- **Solution images** – `assets/images/solutions/*.jpg`
-- **Team photos** – `assets/images/team/*.jpg`
-- **Partner logos** – add real `<img>` tags in `.partner-logo` divs
-- **Hero image** – `assets/images/hero-product.png`
-- **OG image** – `assets/images/og-image.jpg` (1200×630px)
-- **Logo** – update `.nav-logo-icon` emoji with real SVG/PNG
-- **Favicon** – replace data-URI with real `/favicon.ico` or `/favicon.svg`
-- **Phone / Email / Address** – search for `XXX` in all HTML files
-- **Google Map** – replace `.map-placeholder` div in `contact.html` with `<iframe>` embed
-- **Social links** – update `href="#"` in footer
+| Token | Value | Usage |
+|---|---|---|
+| `--green-700` | `#6b4c38` | Primary — buttons, links |
+| `--green-900` | `#2a1e14` | Footer, hero, CTA backgrounds |
+| `--green-400` | `#c4a08a` | Accent, badges |
+| `--gray-50` | `#f5f2ef` | Page background |
+| `--gray-900` | `#261c14` | Body text |
 
-## Deployment
-See `DEPLOY.md` for full step-by-step instructions.
+To change the palette: edit only `:root {}` in `assets/css/styles.css`.
+
+---
+
+## Bilingual (TH / EN)
+
+- Default language: **Thai**
+- Switching: `localStorage` key `rdm_lang` → `'th'` or `'en'`
+- Markup: `<tag data-i18n="key">ค่า fallback ภาษาไทย</tag>`
+- Translations: `assets/js/lang.js` — add new keys to **both** `en` and `th`
+
+---
+
+## Real Business Info (already in code)
+
+| | |
+|---|---|
+| Phone | 02-136-3479 / 02-397-0287 |
+| Mobile / LINE | 090-971-6299 / LINE ID: RDmedcare |
+| Address | 497 Udomsuk Road, Bangna, Bangkok 10260 |
+| Email | info@rdmedcare.com |
+| Hours | Mon–Fri 09:00–17:00 |
+
+---
+
+## Still Pending (needs client)
+
+- [ ] Team photos — `about.html` shows `👤` placeholder
+- [ ] Real clinical photos — `solutions.html` uses SVG illustrations
+- [ ] Infusion Pump product photo
+- [ ] Google Maps pin — currently shows nearby business name
+
+---
 
 ## Local Preview
+
 ```bash
-# Any static server works, e.g.:
 npx serve .
-# or open index.html directly in browser
+# then open http://localhost:3000
 ```
+
+---
+
+## Deployment
+
+Push to `main` triggers auto-deploy via `.github/workflows/deploy.yml`.  
+After pushing JS/CSS changes, users need **Cmd+Shift+R** to clear browser cache.

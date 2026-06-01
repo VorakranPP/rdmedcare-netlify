@@ -1,0 +1,56 @@
+# ============================================================
+#  RD Medcare – Netlify Configuration
+#  Docs: https://docs.netlify.com/configure-builds/file-based-configuration/
+# ============================================================
+
+[build]
+  publish = "."        # Root is the publish directory (pure HTML/CSS/JS)
+  command = ""         # No build step required
+
+# ── HTTP Headers ─────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options        = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection       = "1; mode=block"
+    Referrer-Policy        = "strict-origin-when-cross-origin"
+    Permissions-Policy     = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# ── Redirects ─────────────────────────────────────────────────
+# Clean URLs: /products → /products.html
+[[redirects]]
+  from   = "/products"
+  to     = "/products.html"
+  status = 200
+
+[[redirects]]
+  from   = "/solutions"
+  to     = "/solutions.html"
+  status = 200
+
+[[redirects]]
+  from   = "/about"
+  to     = "/about.html"
+  status = 200
+
+[[redirects]]
+  from   = "/contact"
+  to     = "/contact.html"
+  status = 200
+
+# 404 fallback
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 404

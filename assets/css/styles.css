@@ -5,30 +5,30 @@
 
 /* ─── Design Tokens ─────────────────────────────────────── */
 :root {
-  /* Earth tone palette — soft warm brown */
-  --green-900:  #2a1e14;
-  --green-800:  #3e2d20;
-  --green-700:  #6b4c38;
-  --green-600:  #8b6550;
-  --green-500:  #a88068;
-  --green-400:  #c4a08a;
-  --green-300:  #d9bfad;
-  --green-200:  #ecdfd5;
-  --green-100:  #f5ede8;
-  --green-50:   #faf6f3;
+  /* Soft accidental palette — lighter, warmer, casual */
+  --green-900:  #5a4a40;
+  --green-800:  #6b5850;
+  --green-700:  #a2805d;
+  --green-600:  #a99488;
+  --green-500:  #b8a896;
+  --green-400:  #dac6a3;
+  --green-300:  #e8dcc8;
+  --green-200:  #f0e8dd;
+  --green-100:  #f8f2ec;
+  --green-50:   #fcf9f6;
 
-  /* Warm grey neutrals — lighter */
-  --gray-950:  #1a120a;
-  --gray-900:  #261c14;
-  --gray-800:  #38291e;
-  --gray-700:  #4e3c30;
-  --gray-600:  #6e5a4e;
-  --gray-500:  #8c7c70;
-  --gray-400:  #aaa098;
-  --gray-300:  #c8beb8;
-  --gray-200:  #e0d8d2;
+  /* Muted sage + warm grey neutrals — softer */
+  --gray-950:  #3a2f27;
+  --gray-900:  #4a3f37;
+  --gray-800:  #5a4f47;
+  --gray-700:  #6a5f57;
+  --gray-600:  #8b8e7c;
+  --gray-500:  #9a9f8f;
+  --gray-400:  #b3b8a8;
+  --gray-300:  #ccd2c2;
+  --gray-200:  #dfe5d5;
   --gray-100:  #ede8e4;
-  --gray-50:   #f5f2ef;
+  --gray-50:   #f8f5f2;
   --white:     #ffffff;
 
   /* Semantic */
@@ -55,10 +55,10 @@
   --r-2xl: 48px;
 
   /* Shadows */
-  --shadow-sm:  0 1px 3px rgba(60,30,10,0.08), 0 1px 2px rgba(60,30,10,0.06);
-  --shadow-md:  0 4px 16px rgba(60,30,10,0.10), 0 2px 6px rgba(60,30,10,0.07);
-  --shadow-lg:  0 12px 40px rgba(60,30,10,0.13), 0 4px 12px rgba(60,30,10,0.08);
-  --shadow-xl:  0 24px 64px rgba(60,30,10,0.16);
+  --shadow-sm:  0 1px 3px rgba(90,74,64,0.06), 0 1px 2px rgba(90,74,64,0.04);
+  --shadow-md:  0 4px 16px rgba(90,74,64,0.08), 0 2px 6px rgba(90,74,64,0.05);
+  --shadow-lg:  0 12px 40px rgba(90,74,64,0.10), 0 4px 12px rgba(90,74,64,0.06);
+  --shadow-xl:  0 24px 64px rgba(90,74,64,0.12);
 
   /* Motion */
   --ease:     cubic-bezier(0.4, 0, 0.2, 1);
@@ -77,7 +77,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: var(--text-primary);
-  background: var(--white);
+  background: var(--green-100);
   overflow-x: hidden;
 }
 img  { max-width: 100%; height: auto; display: block; }
